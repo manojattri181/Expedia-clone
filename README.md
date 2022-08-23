@@ -1,6 +1,10 @@
 # oval-wall-8886
 
-# Expedia.com Clone
 
 ## Team members:-
-- <a href='https://github.com/manojattri181'> Monojattri181 </a>
+1. Manoj attri 
+2. Mohammad Atique Mohammad Shafi
+3. Sudipta Bhattacharjee
+4. Md Irfan
+5. Bhrugu Prasad
+
