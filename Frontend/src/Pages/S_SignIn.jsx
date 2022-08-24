@@ -14,13 +14,18 @@ import { AiFillApple } from "react-icons/ai"; // FcGoogle
 import { FcGoogle } from "react-icons/fc";
 import { AiFillFacebook } from "react-icons/ai";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { Signigfun } from "../Redux/Auth-reducer/action";
 
 export default function S_SignIn() {
-  const [email, setEmail] = useState("fd");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  
+  const dispatch = useDispatch()
+
   function SendSignInRequest() {
-    
+    if(email !== '' && password !== ''){
+      dispatch(Signigfun({email: email, password: password}))
+    }
   }
   return (
     <Box>
