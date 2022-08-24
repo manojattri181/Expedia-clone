@@ -1,10 +1,10 @@
 import './App.css';
-import { Fullpage } from './Redux/component/Totalpage';
+import MainRoutes from './Components/MainRoutes';
 
 function App() {
   return (
     <div className="App">
-      <Fullpage />
+      <MainRoutes />
     </div>
   );
 }

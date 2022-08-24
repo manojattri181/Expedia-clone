@@ -100,3 +100,14 @@ body{
     cursor: pointer;
     color: #1f1f1f;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #343b53;
+}
+
+.hoverIcons:hover{
+    cursor: pointer;
+    color: blue;
+}
