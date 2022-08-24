@@ -1,0 +1,10 @@
+.product{
+    width: 300px;
+    margin: 0 auto;
+}
+.imgP{
+  padding:"10px";
+}
+.imgP:hover{
+  cursor: pointer;
+}

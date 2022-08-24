@@ -1,9 +1,10 @@
 import './App.css';
+import MainRoutes from './Components/MainRoutes';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <MainRoutes />
     </div>
   );
 }
