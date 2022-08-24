@@ -1,0 +1,455 @@
+{
+  "stays": [
+    {
+      "title": "The St. Regis Mumbai",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/000ae696_b.jpg"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/36a08f04.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/dd203221.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/4979dec1.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        }
+      ],
+      "amenities": {
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "462 Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra, 400013",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "The St. Regis Mumbai",
+        "subTitle": "5-star luxury hotel in the heart of Lower Parel",
+        "desc": "Consider a stay at The St. Regis Mumbai and take advantage of a nightclub, a poolside bar, and a grocery/convenience store. Treat yourself to a deep-tissue massage, Ayurvedic treatments, or reflexology at Iridium Spa, the onsite spa. Be sure to enjoy a meal at any of the 8 onsite restaurants, which feature international cuisine and garden views. Pilates classes are offered at the 24-hour gym;",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "rating": "4.3",
+      "reviews": "463"
+    },
+    {
+      "title": "ITC Maratha Mumbai, a Luxury Collection Hotel, Mumbai",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/2b755052.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/12ab1c31.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/66f2da2f.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/df08ed8d.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/580000/577900/577808/d179b02c.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Executive Room, 1 King Bed, Pool Access, Garden View (Exclusive)",
+          "size": "370 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 2",
+          "price": "163"
+        },
+        {
+          "name": "The Towers",
+          "size": "419 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "175"
+        },
+        {
+          "name": "Club Room, 1 Double Bed, Non Smoking, City View (ITC One)",
+          "size": "550 sq ft",
+          "bedSize": "1 Double Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "200"
+        }
+      ],
+      "amenities": {
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Sahar, Andheri (E), Mumbai, Maharashtra, 400 099",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "ITC Maratha Mumbai, a Luxury Collection Hotel, Mumbai",
+        "subTitle": "5-star luxury hotel in the business district",
+        "desc": "Take advantage of shopping on site, 2 coffee shops/cafes, and a garden at ITC Maratha Mumbai, a Luxury Collection Hotel, Mumbai. Treat yourself to a Swedish massage, a body wrap, or a body treatment at Kaya Kalp - The Spa, the onsite spa. Be sure to enjoy a meal at any of the 5 onsite restaurants, which feature Indian cuisine and more.",
+        "languages": {
+          "English": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "rating": "4.3",
+      "reviews": "461"
+    },
+    {
+      "title": "Taj Mahal Tower, Mumbai",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/1ac59945.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/e7496f6d.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/a9686d84.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/d28a5f5e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/e10ea517.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Superior Room City View",
+          "size": "301 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "125"
+        },
+        {
+          "name": "Deluxe Room City View",
+          "size": "301 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "144"
+        },
+        {
+          "name": "Superior Room Sea View",
+          "size": "301 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "153"
+        }
+      ],
+      "amenities": {
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Apollo Bunder, Mumbai, Maharashtra, 400 001",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "Taj Mahal Tower, Mumbai",
+        "subTitle": "5-star luxury hotel in the heart of Colaba",
+        "desc": "You can look forward to a roundtrip airport shuttle, a terrace, and an art gallery on site at Taj Mahal Tower, Mumbai. Treat yourself to a body scrub, a massage, or a facial at Jiva Spa, the onsite spa. Be sure to enjoy a meal at any of the 10 onsite restaurants, which feature a poolside location and more.",
+        "languages": {
+          "English": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "rating": "4.8",
+      "reviews": "998"
+    },
+    {
+      "title": "The Taj Mahal Palace Mumbai",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/f93bcf11.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/8cf0d468.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/bf4ef32e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Luxury Room (Windowless)",
+          "size": "398 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "244"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "355 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "282"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "398 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "313"
+        }
+      ],
+      "amenities": {
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Opposite Gateway of India, Apollo Bunder, Colaba, Mumbai, Maharashtra, 400001",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "The Taj Mahal Palace Mumbai",
+        "subTitle": "A poolside bar, a terrace, and an art gallery on site are just a few of the amenities provided at The Taj Mahal Palace Mumbai. Treat yourself to a massage, a manicure/pedicure, or aromatherapy at Jiva Spa, the onsite spa. Be sure to enjoy a meal at any of the 9 onsite restaurants, which feature Japanese cuisine and brunch. Free in-room WiFi is available to all guests, along with a shopping mall on site and 2 coffee shops/cafes",
+        "languages": {
+          "English": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "rating": "4.7",
+      "reviews": "212"
+    },{
+      "title": "JW Marriott Mumbai Sahar",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/0114879f.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/5f07eb8c.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/0b07cdc3.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/9b3e4816.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/03c244cc.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, City View",
+          "size": "413 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Non-Refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "146"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "409 sq ft",
+          "bedSize": "2 Double Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "146"
+        },
+        {
+          "name": "Room, 2 Double Beds, Pool View",
+          "size": "409 sq ft",
+          "bedSize": "2 Double Beds",
+          "policy": "Non-Refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "162"
+        }
+      ],
+      "amenities": {
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "IA Project Road, Chhatrapati Shivaji Intl Airport, Mumbai, Maharashtra, 400099",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "JW Marriott Mumbai Sahar",
+        "subTitle": "5-star luxury hotel connected to the convention center",
+        "desc": "At JW Marriott Mumbai Sahar, you can look forward to a roundtrip airport shuttle, a grocery/convenience store, and a shopping mall on site. Treat yourself to a body scrub, a deep-tissue massage, or a body treatment at Spa by JW, the onsite spa. Be sure to enjoy a meal at any of the 3 onsite restaurants, which feature international cuisine and more. Free WiFi in public areas is available to all guests, along with a coffee shop/cafe and a garden.",
+        "languages": {
+         
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "rating": "4.5",
+      "reviews": "507"
+    }
+  ]
+}
