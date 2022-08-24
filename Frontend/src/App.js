@@ -1,9 +1,10 @@
 import './App.css';
+import { Fullpage } from './Redux/component/Totalpage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Fullpage />
     </div>
   );
 }
