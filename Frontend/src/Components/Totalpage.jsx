@@ -2,12 +2,12 @@ import React from "react";
 import { Navbar } from "./Navbar";
 import { ButtonPage } from "./Buttonpage";
 
-const Fullpage = () =>{
+const Totalpage = () =>{
     return (
-    <>
-    <Navbar />
-    <ButtonPage />
-    </>
+    <div>
+        <Navbar />
+        <ButtonPage />
+    </div>
     )
 }
-export {Fullpage};
+export {Totalpage};

@@ -19,6 +19,7 @@ let data =[
       src:"https://images.trvl-media.com/hotels/4000000/3860000/3851700/3851663/958ad657.jpg?impolicy=resizecrop&rw=598&ra=fit"
     }
     ];
+    
 const ImageSlider = () => {
     const [image,setImage] = useState(0);
   return (
