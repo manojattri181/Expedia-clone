@@ -1,17 +1,14 @@
-import { Flex } from '@chakra-ui/react'
 import React from 'react'
 import ProductCard from '../Components/ProductCard'
 
 const ProductSection = () => {
   return (
-    <Flex m="auto" direction={"column"} rowGap="10px">
+    <div className='w-full flex flex-col gap-y-7'>
        <ProductCard />
        <ProductCard />
        <ProductCard />
        <ProductCard />
-       <ProductCard />
-       <ProductCard />
-    </Flex>
+    </div>
   )
 }
 
