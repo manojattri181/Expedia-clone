@@ -1,13 +1,13 @@
 const express = require("express");
 
-const Stays = require("../models/stays.models");
+const Cars = require("../models/cars.models");
 
 const router = express.Router();
 
 router.post("", async (req, res) => {
   try {
-    const stay = await Stays.create(req.body);
-    return res.status(201).send(stay);
+    const car = await Cars.create(req.body);
+    return res.status(201).send(car);
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
@@ -23,13 +23,16 @@ router.get("", async (req, res) => {
         $match: {
           $or: [
             {
-              title: { $regex: req.query.q, $options: "i" },
+              name: { $regex: req.query.q, $options: "i" },
+            },
+            {
+              type: { $regex: req.query.q, $options: "i" },
             },
             {
               city: { $regex: req.query.q, $options: "i" },
             },
             {
-              map: { $regex: req.query.q, $options: "i" },
+              "location.map": { $regex: req.query.q, $options: "i" },
             },
           ],
         },
@@ -38,40 +41,40 @@ router.get("", async (req, res) => {
 
     // filter
 
-    if (req.query.dinner) {
+    if (req.query.economy) {
       query.push({
         $match: {
-          "amenities.dinner": req.query.dinner,
+          type: req.query.economy,
         },
       });
     }
 
-    if (req.query.all) {
+    if (req.query.mini) {
       query.push({
         $match: {
-          "amenities.all": req.query.all,
+          type: req.query.mini,
         },
       });
     }
 
-    if (req.query.lunch) {
+    if (req.query.compact) {
       query.push({
         $match: {
-          "amenities.lunch": req.query.lunch,
+          type: req.query.compact,
         },
       });
     }
 
-    if (req.query.breakfast) {
+    if (req.query.midSize) {
       query.push({
         $match: {
-          "amenities.breakfast": req.query.breakfast,
+          type: req.query.midSize,
         },
       });
     }
     // pagination
 
-    let total = await Stays.countDocuments(query);
+    let total = await Cars.countDocuments(query);
     let page = req.query.page ? parseInt(req.query.page) : 1;
     let perPage = req.query.perPage ? parseInt(req.query.perPage) : 10;
     let skip = (page - 1) * perPage;
@@ -96,12 +99,12 @@ router.get("", async (req, res) => {
       });
     }
 
-    const stays = await Stays.aggregate(query);
+    const cars = await Cars.aggregate(query);
 
     return res.status(200).send({
       message: "data Successfully fetched",
       data: {
-        stays: stays,
+        cars: cars,
         meta: {
           total: total,
           currentPage: page,
@@ -117,9 +120,9 @@ router.get("", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   try {
-    const stay = await Stays.findById(req.params.id).lean().exec();
+    const car = await Cars.findById(req.params.id).lean().exec();
 
-    return res.status(200).send(stay);
+    return res.status(200).send(car);
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
@@ -127,13 +130,13 @@ router.get("/:id", async (req, res) => {
 
 router.patch("/:id", async (req, res) => {
   try {
-    const stay = await Stays.findByIdAndUpdate(req.params.id, req.body, {
+    const car = await Cars.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
     })
       .lean()
       .exec();
 
-    return res.status(200).send(stay);
+    return res.status(200).send(car);
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
@@ -141,9 +144,9 @@ router.patch("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    const stay = await Stays.findByIdAndDelete(req.params.id).lean().exec();
+    const car = await Cars.findByIdAndDelete(req.params.id).lean().exec();
 
-    return res.status(200).send(stay);
+    return res.status(200).send(car);
   } catch (error) {
     return res.status(500).send({ message: error.message });
   }
