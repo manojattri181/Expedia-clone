@@ -2,7 +2,6 @@ import {Image } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
-
 const ImageSlider = ({w,h,borderRadius,data}) => {
   const [image,setImage] = useState(0);
   const [count,setCount] = useState(1);
