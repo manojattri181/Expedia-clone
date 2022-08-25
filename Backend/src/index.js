@@ -2,6 +2,7 @@ const express = require("express");
 const authController = require("./controllers/auth-controller")
 const currentProfileController = require("./controllers/current_profilecontroller")
 const staysController = require("./controllers/stays.controllers")
+const carsController = require("./controllers/cars.controller")
 const cors = require('cors')
 const app = express();
 app.use(cors())
@@ -15,6 +16,7 @@ app.get("/", (req,res)=> {
 app.use("/auth",authController);
 app.use("/profile",currentProfileController)
 app.use("/stays",staysController)
+app.use("/cars",carsController)
 
 
 

@@ -5,13 +5,14 @@ import MiddleBanner2 from '../Assets/HomePage_Images/MiddleBanner-2.webp'
 import MiddleBanner3 from '../Assets/HomePage_Images/MiddleBanner-3.webp'
 import MiddleBanner4 from '../Assets/HomePage_Images/MiddleBanner-4.webp'
 import MiddleBanner5 from '../Assets/HomePage_Images/MiddleBanner-5.webp'
+import MiddleAdd from '../Assets/HomePage_Images/MiddleAdd.jfif'
 
 const MiddleBanner = () => {
     return (
-        <Box w={{ sm: '100%', md: '90%', lg: '80%' }} m='50px auto'>
+        <Box w={{ sm: '95%', md: '90%', lg: '80%' }} m='50px auto'>
             <SimpleGrid spacing={6} mt='1rem' columns={{ sm: '1', md: '2', lg: '3' }}>
 
-                <Box>
+                <Box cursor='pointer'>
                     <Box>
                         <Image borderRadius='8px' src={MiddleBanner1} />
                     </Box>
@@ -21,7 +22,7 @@ const MiddleBanner = () => {
                     </Box>
                 </Box>
 
-                <Box>
+                <Box cursor='pointer'>
                     <Box>
                         <Image borderRadius='8px' src={MiddleBanner2} />
                     </Box>
@@ -31,7 +32,7 @@ const MiddleBanner = () => {
                     </Box>
                 </Box>
 
-                <Box>
+                <Box cursor='pointer'>
                     <Box>
                         <Image borderRadius='8px' src={MiddleBanner3} />
                     </Box>
@@ -43,9 +44,9 @@ const MiddleBanner = () => {
 
             </SimpleGrid>
 
-            <SimpleGrid spacing={7} mt='1rem' columns={{ sm: '1', md: '2' }}>
+            <SimpleGrid mt='25px' spacing={7} columns={{ sm: '1', md: '2' }}>
 
-                <Box>
+                <Box cursor='pointer'>
                     <Box>
                         <Image borderRadius='8px' src={MiddleBanner4} />
                     </Box>
@@ -55,7 +56,7 @@ const MiddleBanner = () => {
                     </Box>
                 </Box>
 
-                <Box>
+                <Box cursor='pointer'>
                     <Box>
                         <Image borderRadius='8px' src={MiddleBanner5} />
                     </Box>
@@ -65,6 +66,10 @@ const MiddleBanner = () => {
                     </Box>
                 </Box>
             </SimpleGrid>
+
+            <Box m='50px auto' cursor='pointer' w={{sm: '90%', md: '70%', lg: '65%'}}>
+                <Image w='100%' src={MiddleAdd} />
+            </Box>
         </Box>
     )
 }
