@@ -20,11 +20,11 @@ import { Signigfun } from "../Redux/Auth-reducer/action";
 export default function S_SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   function SendSignInRequest() {
-    if(email !== '' && password !== ''){
-      dispatch(Signigfun({email: email, password: password}))
+    if (email !== "" && password !== "") {
+      dispatch(Signigfun({ email: email, password: password }));
     }
   }
   return (
@@ -53,7 +53,11 @@ export default function S_SignIn() {
             border={`2px solid`}
             type={"email"}
           />
-        {email === '' ? <FormLabel color={'red'}>Email is required.</FormLabel>:<FormLabel></FormLabel>}
+          {email === "" ? (
+            <FormLabel color={"red"}>Email is required.</FormLabel>
+          ) : (
+            <FormLabel></FormLabel>
+          )}
         </Box>
         <Box mb={"20px"}>
           <FormLabel>Enter Password</FormLabel>
@@ -65,7 +69,11 @@ export default function S_SignIn() {
             border={`2px solid`}
             type={"password"}
           />
-        {password === '' ? <FormLabel color={'red'}>Password is required.</FormLabel>:<FormLabel></FormLabel>}
+          {password === "" ? (
+            <FormLabel color={"red"}>Password is required.</FormLabel>
+          ) : (
+            <FormLabel></FormLabel>
+          )}
         </Box>
         <Box mb={"20px"}>
           <Checkbox size={"lg"} defaultChecked>
