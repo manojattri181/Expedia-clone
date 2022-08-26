@@ -18,10 +18,7 @@ const carsSchema = new mongoose.Schema(
     cancellation:{ type: Boolean, required: true },
    
     location: {
-      time: { 
-        pickup:{ type: String, required: true },
-        drop:{ type: String, required: true },
-       },
+      
        map: { type: String, required: true },
      
     }
