@@ -43,7 +43,7 @@ const staysSchema = new mongoose.Schema(
       desc: { type: String, required: true },
       languages: {
         English: { type: Boolean, required: true },
-        German: { type: Boolean, required: true },
+        German: { type: Boolean, required: false},
         Hindi: { type: Boolean, required: true },
       },
     },
