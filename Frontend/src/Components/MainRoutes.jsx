@@ -6,7 +6,7 @@ import  {Totalpage}  from './Totalpage'
 import CreateAccount from '../Pages/S_CreateAccount'
 import S_Hotel from '../Pages/S_Hotel'
 import S_SignIn from '../Pages/S_SignIn'
-import StaysPage from '../Pages/StaysPage'
+import SingleStaysPage from '../Pages/SingleStaysPage'
 
 const MainRoutes = () => {
     return (
@@ -18,7 +18,7 @@ const MainRoutes = () => {
             <Route path='/create_account' element={<CreateAccount/>} />
             <Route path='/nav_hotel' element={<S_Hotel/>} />
             <Route path="/product" element={ <Product/>} />
-            <Route path='/stays' element={< StaysPage/>} />
+            <Route path='/stays' element={< SingleStaysPage/>} />
         </Routes>
     )
 }

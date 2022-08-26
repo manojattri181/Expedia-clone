@@ -1,7 +1,7 @@
 import React from 'react'
 import nav from "../Assets/HomePage_Images/navBarExpedia.png"
 
-const StaysPage = () => {
+const SingleStaysPage = () => {
   return (
     <div>
         <img  src={nav} alt="advertisement" />
@@ -10,4 +10,4 @@ const StaysPage = () => {
   )
 }
 
-export default StaysPage
+export default SingleStaysPage
