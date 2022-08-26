@@ -20,10 +20,10 @@ const staysSchema = new mongoose.Schema(
       },
     ],
     amenities: {
-      all:{ type: Boolean, required: true },
-      dinner:{ type: Boolean, required: true },
-      lunch:{ type: Boolean, required: true },
-      breakFast:{ type: Boolean, required: true },
+      all:{ type: Boolean, required: false },
+      dinner:{ type: Boolean, required: false },
+      lunch:{ type: Boolean, required: false },
+      breakFast:{ type: Boolean, required: false },
       Pool: { type: Boolean, required: true },
       FreeWiFi: { type: Boolean, required: true },
       Parkingincluded: { type: Boolean, required: true },
@@ -43,7 +43,7 @@ const staysSchema = new mongoose.Schema(
       desc: { type: String, required: true },
       languages: {
         English: { type: Boolean, required: true },
-        German: { type: Boolean, required: true },
+        German: { type: Boolean, required: false},
         Hindi: { type: Boolean, required: true },
       },
     },

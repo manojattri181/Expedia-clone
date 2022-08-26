@@ -48,7 +48,7 @@
       ],
       "amenities": {
         "all": true,
-        "dinner":true,
+        "dinner": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -142,7 +142,7 @@
       ],
       "amenities": {
         "lunch": true,
-        "breakfast":true,
+        "breakfast": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -235,8 +235,8 @@
       ],
       "amenities": {
         "breakfast": true,
-        "all":true,
-        "lunch":true,
+        "all": true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -329,7 +329,7 @@
       ],
       "amenities": {
         "dinner": true,
-        "lunch":true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -421,8 +421,8 @@
       ],
       "amenities": {
         "all": true,
-        "breakfast":true,       
-         "Pool": true,
+        "breakfast": true,
+        "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
         "Air conditioning": true,
@@ -515,9 +515,9 @@
       ],
       "amenities": {
         "all": true,
-        "breakfast":true,
-        "dinner":true,
-        "lunch":true,
+        "breakfast": true,
+        "dinner": true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -611,8 +611,8 @@
       ],
       "amenities": {
         "dinner": true,
-        "breakfast":true,
-        "lunch":true,
+        "breakfast": true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -1077,7 +1077,7 @@
       ],
       "amenities": {
         "breakfast": true,
-        "linch":true,
+        "linch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -1171,7 +1171,7 @@
       ],
       "amenities": {
         "dinner": true,
-        "linch":true,
+        "linch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -1217,6 +1217,197 @@
       "rating": "2.8",
       "reviews": "3"
     }
-
+  ],
+  "cars": [
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+     {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Mini",
+      "name": "Hyundai I10 Grand 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/9180d2c1-ba15-42db-b0f4-4e88ab972bda.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Mini",
+      "name": "Hyundai I10 Grand 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/9180d2c1-ba15-42db-b0f4-4e88ab972bda.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Compact",
+      "name": "Toyota Etios 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/4109290a-f688-47e4-b97f-d67315c629f0.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "124",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Compact",
+      "name": "Toyota Etios 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/4109290a-f688-47e4-b97f-d67315c629f0.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "124",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Midsize",
+      "name": "Maruti Ciaz 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/31cac5dc-bcfb-4c6d-88ec-2c3cfcd9807f.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "180",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Midsize",
+      "name": "Maruti Ciaz 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/31cac5dc-bcfb-4c6d-88ec-2c3cfcd9807f.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "180",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    }
   ]
 }

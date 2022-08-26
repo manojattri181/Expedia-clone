@@ -13,24 +13,32 @@ import React from "react";
 import appBanner from "../Assets/HomePage_Images/Top-app-banner.webp";
 import QR from "../Assets/HomePage_Images/QR.webp";
 import SummerBanner from "../Assets/HomePage_Images/Summer-banner.jpg";
+import { useNavigate } from "react-router-dom";
 
 const TopBanner = () => {
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    // navigate('/product', { replace: true })
+  }
+
   return (
-    <Stack w={{ sm: "95%", md: "80%", lg: "80%" }} m="50px auto" gap="2.5rem">
+    <Stack w={{ sm: "90%", md: "90%", lg: "80%" }} m={['50px 10px', '50px auto', '50px auto', '50px auto']} gap="2.5rem">
       {/* Download app banner */}
-      <Flex w="100%" borderRadius="8px" border="0.2px solid gray">
-        <Box w="35%">
+      <Flex direction={['column', 'column', 'column', 'row']} w="100%" borderRadius="8px" border="0.2px solid gray">
+        <Box w={['100%', '100%', '100%', '35%']}>
           <Image
             h="100%"
             w="100%"
-            borderTopLeftRadius="8px"
-            borderBottomLeftRadius="8px"
+            borderTopLeftRadius='8px'
+            borderTopRightRadius={['8px', '8px', '8px']}
+            borderBottomLeftRadius={['', '', '', '8px']}
             src={appBanner}
           />
         </Box>
 
-        <Flex w="70%" p="24px" justify="space-between" gap="1rem">
-          <Box w="75%">
+        <Flex direction={['column', 'column', 'row']} w={['100%', '100%', '100%', '75%']} p="24px" justify="space-between" gap="1rem">
+          <Box w={['100%', '100%', '100%', '75%']}>
             <Heading>Our app takes you further</Heading>
             <Text fontSize="sm" mt="0.5rem">
               When you book on the app you can save up to 25% on select hotels
@@ -89,8 +97,8 @@ const TopBanner = () => {
           </Box>
 
           {/* QR code box */}
-          <Box w="29%">
-            <Image w="100%" h="80%" src={QR} />
+          <Box w={['30%', '35%', '35%', '29%']} m={['auto', 'auto', 'auto']}>
+            <Image w="100%" h={['60%', '65%', '70%', '75%']} src={QR} />
             <Text textAlign="center"> Scan the QR code</Text>
           </Box>
         </Flex>
@@ -99,15 +107,15 @@ const TopBanner = () => {
       {/* Summer offer banner */}
       <Box w="100%" position="relative">
         <Image borderRadius="10px" w="100%" src={SummerBanner} />
-        <Box w="400px" position="absolute" top="50px" left="50px">
-          <Heading color="white">
+        <Box w={['90%', '90%', '50%', '35%']} position="absolute" top={['14px', '25px', '35px', '50px']} left={['10px', '15px', '25px', '35px']}>
+          <Heading fontSize={['1xl', '1xl', '1.5rem', '2rem']} color="white">
             Members get last minute summer savings
           </Heading>
-          <Text m="1rem 0px" color="white">
+          <Text display={['none', 'block', 'block', 'block']} m={['10px 0px', '10px 0px', "1rem 0px"]} color="white">
             Plan a last-minute summer getaway with Member Prices of 10% off or
             more on select hotels.
           </Text>
-          <Button bg="#3662d8" _hover="none" color="white">
+          <Button onClick={handleClick} size={['xs', 'sm', 'md', 'md', 'md']} mt={['1rem', '0px']} mb={{ xs: '5px', sm: '5px' }} bg="#3662d8" _hover="none" color="white">
             See members details
           </Button>
         </Box>

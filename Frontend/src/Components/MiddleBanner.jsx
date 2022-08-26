@@ -9,7 +9,7 @@ import MiddleAdd from '../Assets/HomePage_Images/MiddleAdd.jfif'
 
 const MiddleBanner = () => {
     return (
-        <Box w={{ sm: '95%', md: '90%', lg: '80%' }} m='50px auto'>
+        <Box w={{ sm: '90%', md: '90%', lg: '80%' }} m={['50px 10px', '50px auto', '50px auto', '50px auto']}>
             <SimpleGrid spacing={6} mt='1rem' columns={{ sm: '1', md: '2', lg: '3' }}>
 
                 <Box cursor='pointer'>
