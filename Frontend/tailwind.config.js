@@ -10,11 +10,15 @@ module.exports = {
       blue:"#3662d8",
       white:"#FFFFFF",
       graylight:"#343B53",
-      green:"#228B22",
+      green:"#006400",
       darkgreen:"#0d7066",
     },
-    fontFamily:{
-
+    screens: {
+      "mobile":"500px",
+      'tablet': '720px',
+      "filter":"820px",
+      'laptop': '1024px',
+      'desktop': '1280px',
     },
     extend:{
       

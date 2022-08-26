@@ -1,10 +1,34 @@
+import * as types from "./actionTypes";
+
 const Data = {
-    data: ''
+    data: [],
+    isLoading:false,
+    isError:false
 }
 
 export const AppReducer = (state = Data,action) => {
-    const {type,payload} = action
+    const {type,payload} = action;
     switch(type){
-        default: return state
+         case types.GET_DATA_REQUEST:
+            return{
+                ...state,
+                isLoading:true,
+                isError:false
+            }
+            case types.GET_DATA_SUCCESS:
+                return{
+                   ...state,
+                   data:payload,
+                   isLoading:false,
+                   isError:false    
+                }
+              case types.GET_DATA_FALIURE:
+                return{
+                    ...state,
+                    isError:true,
+                    isLoading:false
+                }  
+              default:
+                 return state
     } 
 }

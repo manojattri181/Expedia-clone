@@ -10,4 +10,4 @@ const Totalpage = () =>{
     </div>
     )
 }
-export {Totalpage};
+export default Totalpage;
