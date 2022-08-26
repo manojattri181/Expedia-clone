@@ -1218,5 +1218,32 @@
       "reviews": "3"
     }
 
+  
+
+  ],
+  "cars":[
+   
+    "type":{} ,
+    "name":{  },
+    "city": { type: String, required: true },
+    "image": { type: String, required: true },
+    "price":{ type: String, required: true },
+    "amenities": {
+      "passangers": { type: Boolean, required: true },
+      "doors": { type: Boolean, required: true },
+      "millage": { type: Boolean, required: true },
+      "Airconditioning": { type: Boolean, required: true },
+      "fuelInfo": { type: Boolean, required: true },
+      "manual": { type: Boolean, required: true },
+    },
+    "cancellation":{ type: Boolean, required: true },
+   
+    "location": {
+     
+       "map": { type: String, required: true },
+     
+    }
+ 
+
   ]
 }
