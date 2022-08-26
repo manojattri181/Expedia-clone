@@ -1,8 +1,8 @@
-import { SIGNIN_FAILURE, SIGNIN_REQUEST, SIGNIN_SUCCESS } from "./actionTypes";
+import { SIGNIN_FAILURE, SIGNIN_REQUEST, SIGNIN_SUCCESS, SIGNOUT } from "./actionTypes";
 
 const signInData = {
   token: "",
-  isAuth: false,
+  isAuth: true,
   isLooding: false,
   isError: false,
 };
@@ -28,6 +28,11 @@ export const AuthReducer = (state = signInData, action) => {
         isLooding: false,
         isError: true,
       };
+    case SIGNOUT: 
+      return {
+        ...state,
+        isAuth: false
+      }
     default:
       return state;
   }

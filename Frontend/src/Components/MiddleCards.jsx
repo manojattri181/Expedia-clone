@@ -6,7 +6,7 @@ import {HiChatAlt2} from 'react-icons/hi'
 
 const MiddleCards = () => {
     return (
-        <Box w={{ sm: '95%', md: '90%', lg: '80%' }} m='25px auto'>
+        <Box w={{ sm: '90%', md: '90%', lg: '80%' }} m={['50px 10px', '50px auto', '50px auto', '50px auto']}>
             <Heading>Here to help keep you on the move</Heading>
 
             <SimpleGrid spacing={3} mt='1rem' columns={{ sm: '1', md: '2', lg: '3' }}>
