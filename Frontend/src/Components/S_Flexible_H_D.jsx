@@ -1,15 +1,15 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
-export default function S_Flexible_H_D() {
+export default function S_Flexible_H_D({image}) {
   return (
     <Box>
       <Box
         display={"flex"}
         // border={"1px solid black"}
         h={"400px"}
-        ml={"8%"}
-        mr={"8%"}
+        w={'84%'}
+        margin={"auto"}
         mb={'50px'}
       >
         <Box
@@ -25,7 +25,7 @@ export default function S_Flexible_H_D() {
             w={"100%"}
             borderTopLeftRadius={"10px"}
             borderTopRightRadius={"10px"}
-            src="https://cdn.pixabay.com/photo/2014/12/10/06/46/venetian-562759_960_720.jpg"
+            src={image}
           />
           <Text ml={"15px"} mt={"20px"} fontSize={"25px"} fontWeight={500}>
             Flexible hotel deals
