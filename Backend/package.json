@@ -1,0 +1,33 @@
+{
+  "name": "unit5project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dbserver": "json-server --watch db.json --port 8080",
+    "server": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.2",
+    "json": "^11.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "nodemailer": "^6.7.3",
+    "passport": "^0.5.2",
+    "passport-google-oauth2": "^0.2.0",
+    "server": "^1.0.37",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}
