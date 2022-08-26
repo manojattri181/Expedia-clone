@@ -5,17 +5,19 @@ import S_Barcode_Component from "../Components/S_Barcode_Component";
 import S_Flexible_H_D from "../Components/S_Flexible_H_D";
 import S_Simple_image_box from "../Components/S_Simple_image_box";
 import S_Simple_image_box2 from "../Components/S_Simple_image_box2";
-import TopBanner from "../Components/TopBanner";
+import Navbar from '../Components/Navbar'
 
 export default function S_Hotel() {
   return (
     <Box>
-      <Box h={"80px"} border={"1px solid black"}></Box>
+      <Navbar />
       <Box h={"230px"} border={"1px solid black"}></Box>
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Ideas for your next trip
       </Text>
-      <S_Flexible_H_D />
+      <S_Flexible_H_D
+      image={'https://i.postimg.cc/htLwPS1b/H-number-2.png'}
+      />
       <S_Simple_image_box />
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Explore, discover and save

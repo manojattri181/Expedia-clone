@@ -1,6 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react'
 import React from 'react'
-import Add from '../Components/'
 import Filter from '../Components/Filter'
 import ProductCard from '../Components/ProductCard'
 import SearchBar from '../Components/SearchBar'
