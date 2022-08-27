@@ -5,7 +5,8 @@ import S_Barcode_Component from "../Components/S_Barcode_Component";
 import S_Flexible_H_D from "../Components/S_Flexible_H_D";
 import S_Simple_image_box from "../Components/S_Simple_image_box";
 import S_Simple_image_box2 from "../Components/S_Simple_image_box2";
-import Navbar from '../Components/Navbar'
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 export default function S_Hotel() {
   return (
@@ -14,9 +15,7 @@ export default function S_Hotel() {
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Ideas for your next trip
       </Text>
-      <S_Flexible_H_D
-      image={'https://i.postimg.cc/htLwPS1b/H-number-2.png'}
-      />
+      <S_Flexible_H_D image={"https://i.postimg.cc/htLwPS1b/H-number-2.png"} />
       <S_Simple_image_box />
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Explore, discover and save
@@ -69,6 +68,7 @@ export default function S_Hotel() {
           body={`Some hotels on Expedia do offer flexible cancellation policies. You'll be able to see which ones do on your search results page because they'll be labelled as such in green text. Of course, you can always implement the 'fully refundable' search filter to only show results that offer this enticing feature.`}
         />
       </Grid>
+      <Footer />
     </Box>
   );
 }
