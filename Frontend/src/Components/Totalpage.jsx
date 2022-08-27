@@ -1,6 +1,6 @@
 import React from "react";
-import { Navbar } from "./Simplenav";
-import { ButtonPage } from "./Buttonpage";
+import Navbar from "./Navbar";
+import ButtonPage from "./Buttonpage";
 
 const Totalpage = () =>{
     return (

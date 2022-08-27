@@ -8,4 +8,4 @@ const Paymentpage = () =>{
         </div>
     )
 }
-export default Paymentpage
+export default Paymentpage;

@@ -47,6 +47,8 @@
         }
       ],
       "amenities": {
+        "all": true,
+        "dinner": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -88,6 +90,7 @@
           "visa": true
         }
       },
+      "price": "163",
       "rating": "4.3",
       "reviews": "463"
     },
@@ -138,6 +141,8 @@
         }
       ],
       "amenities": {
+        "lunch": true,
+        "breakfast": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -178,6 +183,7 @@
           "visa": true
         }
       },
+      "price": "175",
       "rating": "4.3",
       "reviews": "461"
     },
@@ -228,6 +234,9 @@
         }
       ],
       "amenities": {
+        "breakfast": true,
+        "all": true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -268,6 +277,7 @@
           "visa": true
         }
       },
+      "price": "125",
       "rating": "4.8",
       "reviews": "998"
     },
@@ -318,6 +328,8 @@
         }
       ],
       "amenities": {
+        "dinner": true,
+        "lunch": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -357,9 +369,11 @@
           "visa": true
         }
       },
+      "price": "244",
       "rating": "4.7",
       "reviews": "212"
-    },{
+    },
+    {
       "title": "JW Marriott Mumbai Sahar",
       "city": "Mumbai",
       "images": [
@@ -406,6 +420,8 @@
         }
       ],
       "amenities": {
+        "all": true,
+        "breakfast": true,
         "Pool": true,
         "Free WiFi": true,
         "Parking included": true,
@@ -424,7 +440,6 @@
         "subTitle": "5-star luxury hotel connected to the convention center",
         "desc": "At JW Marriott Mumbai Sahar, you can look forward to a roundtrip airport shuttle, a grocery/convenience store, and a shopping mall on site. Treat yourself to a body scrub, a deep-tissue massage, or a body treatment at Spa by JW, the onsite spa. Be sure to enjoy a meal at any of the 3 onsite restaurants, which feature international cuisine and more. Free WiFi in public areas is available to all guests, along with a coffee shop/cafe and a garden.",
         "languages": {
-         
           "English": true,
           "German": true,
           "Hindi": true
@@ -448,8 +463,951 @@
           "visa": true
         }
       },
+      "price": "146",
       "rating": "4.5",
       "reviews": "507"
+    },
+    {
+      "title": "Hotel Arma Residency",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/000ae696_b.jpg"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/36a08f04.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/dd203221.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/4979dec1.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "163"
+        }
+      ],
+      "amenities": {
+        "all": true,
+        "breakfast": true,
+        "dinner": true,
+        "lunch": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Plot No. 74-P, Kherani Road, Opposite Andromeda House, Sakinaka, Mumbai, Maharashtra, 400072",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "Hotel Arma Residency",
+        "subTitle": "3-star hotel in the heart of Powai",
+        "desc": "Consider a stay at The St. Regis Mumbai and take advantage of a nightclub, a poolside bar, and a grocery/convenience store. Treat yourself to a deep-tissue massage, Ayurvedic treatments, or reflexology at Iridium Spa, the onsite spa. Be sure to enjoy a meal at any of the 8 onsite restaurants, which feature international cuisine and garden views. Pilates classes are offered at the 24-hour gym;",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "163",
+      "rating": "4.9",
+      "reviews": "463"
+    },
+    {
+      "title": "Mumbai Metro - The Executive Hotel",
+      "city": "Mumbai",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/f93bcf11.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/8cf0d468.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/bf4ef32e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Luxury Room (Windowless)",
+          "size": "398 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "244"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "355 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "282"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "398 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "313"
+        }
+      ],
+      "amenities": {
+        "dinner": true,
+        "breakfast": true,
+        "lunch": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Neelkanth Udyog Bhavan, Saki Vihar Road, Saki Naka, Andheri, Mumbai, Maharashtra, 400072",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Mumbai",
+        "desc": "Located in Lower Parel neighborhood, The St. Regis Mumbai is connected to a shopping center. Shree Siddhivinayak Ganapati Temple and Haji Ali Dargah are notable landmarks, and travelers looking to shop may want to visit High Street Phoenix Mall. Looking to enjoy an event or a game while in town? See what's going on at MMRDA Grounds."
+      },
+      "aboutProperty": {
+        "title": "Mumbai Metro - The Executive Hotel",
+        "subTitle": "3-star hotel in the heart of Saki Naka",
+        "desc": "At Mumbai Metro - The Executive Hotel, you can look forward to a free breakfast buffet, a roundtrip airport shuttle, and a terrace. Stay connected with free WiFi in public areas, and guests can find other amenities such as dry cleaning/laundry services.",
+        "languages": {
+          "English": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "282",
+      "rating": "3.4",
+      "reviews": "212"
+    },
+    {
+      "title": "Conrad Pune by Hilton",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/abdf5e78.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/6a6abc6b.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/61b31e33.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/c5fa529e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/13000000/12280000/12270500/12270445/3a0dffb7.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "138"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "150"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "138"
+        }
+      ],
+      "amenities": {
+        "all": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "7 Mangaldas Road, Pune, Maharashtra, 411001",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by Hilton is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "Conrad Pune by Hilton",
+        "subTitle": "5-star luxury hotel in the business district, rejuvenated in 2016",
+        "desc": "At Conrad Pune by Hilton, you can look forward to a nightclub, a roundtrip airport shuttle, and a poolside bar. Treat yourself to a body scrub, a massage, or a body treatment at the onsite spa. Be sure to enjoy a meal at any of the 6 onsite restaurants, which feature international cuisine and a poolside location. In-room WiFi (surcharge) is available to all guests, along with a grocery/convenience store and a rooftop terrace.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "138",
+      "rating": "4.8",
+      "reviews": "463"
+    },
+    {
+      "title": "The Westin Pune Koregaon Park",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/013c2318.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/84194448.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/0869c920.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/a5fbbb2a.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3010000/3003800/3003784/39133377.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "122"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "128"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "147"
+        }
+      ],
+      "amenities": {
+        "lunch": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "36/3-b Koregaon Park Annexe, Mundhawa Road Ghorpadi, Pune, Maharashtra, 411010",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by The Westin Pune Koregaon Park is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "The Westin Pune Koregaon Park",
+        "subTitle": "5-star luxury hotel in the heart of Mundhwa",
+        "desc": "You can look forward to a free roundtrip airport shuttle, 18 holes of golf, and a nightclub at The Westin Pune Koregaon Park. Treat yourself to a Thai massage, a body treatment, or a detox wrap at Heavenly Spa, the onsite spa. Aerobics classes and yoga classes are offered at the 24-hour gym; other things to do include racquetball/squash.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "128",
+      "rating": "4.3",
+      "reviews": "463"
+    },
+    {
+      "title": "Hyatt Regency Pune & Residences",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/fb56c162.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/a896afa9.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/17824e0b.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/66699a2e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/40a28dff.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "90"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "107"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "118"
+        }
+      ],
+      "amenities": {
+        "dinner": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Weikfield IT Park, Nagar Road, Pune, Maharashtra, 411014",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by Hyatt Regency Pune & Residences is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "Hyatt Regency Pune & Residences",
+        "subTitle": "5-star luxury hotel in the business district",
+        "desc": "Take advantage of a roundtrip airport shuttle, a terrace, and a coffee shop/cafe at Hyatt Regency Pune & Residences. Indulge in a body treatment, a body wrap, and a body scrub at Arogya Spa, the onsite spa. Be sure to enjoy a meal at The Cafe, the onsite coffee shop. Yoga classes are offered at the health club; the property also has dry cleaning/laundry services, a bar, and a business center. Free in-room WiFi is available to all guests, along with babysitting and a steam room.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "118",
+      "rating": "4.2",
+      "reviews": "463"
+    },
+    {
+      "title": "Pride Hotel",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/f9c671be.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/96c9e57d.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/d3433776.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/0efd5b08.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/388a675b.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "69"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "66"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "79"
+        }
+      ],
+      "amenities": {
+        "breakfast": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "5 University Road, Shivaji Nagar, Pune, Maharashtra, 411 005",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by Pride Hotel is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "Pride Hotel",
+        "subTitle": "4.5-star luxury hotel in the heart of Shivajinagar",
+        "desc": "Consider a stay at Pride Hotel and take advantage of an airport pick-up service, a coffee shop/cafe, and a hair salon. Indulge in a body treatment and a massage at the onsite spa. Enjoy a meal at the two onsite restaurants. Free in-room WiFi, with speed of 25+ Mbps, is available to all guests, along with dry cleaning/laundry services and a bar.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "69",
+      "rating": "3.6",
+      "reviews": "43"
+    },
+    {
+      "title": "Hotel Basera",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/w365h225x11y0-24f663ed.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/2e07dd03.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/d3433776.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/2e07dd03.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/1000000/450000/447300/447235/388a675b.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "27"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "33"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "42"
+        }
+      ],
+      "amenities": {
+        "breakfast": true,
+        "linch": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "Bajirao Road, Near Parbhat Theatre, Behind Shaniwarwada, Pune-2, Pune, Maharashtra, 411002",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by Hotel Basera is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "Hotel Basera",
+        "subTitle": "3-star hotel",
+        "desc": "Hotel Basera provides amenities like laundry facilities and a restaurant. Stay connected with free in-room WiFi, a coffee shop/cafe, and a hair salon. Indulge in a body treatment and a massage at the onsite spa. Enjoy a meal at the two onsite restaurants. Free in-room WiFi, with speed of 25+ Mbps, is available to all guests, along with dry cleaning/laundry services and a bar.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "34",
+      "rating": "3",
+      "reviews": "2"
+    },
+    {
+      "title": "Hotel Rose Lodge",
+      "city": "Pune",
+      "images": [
+        {
+          "src": "https://images.trvl-media.com/hotels/42000000/41320000/41316800/41316768/82443702.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/42000000/41320000/41316800/41316768/b636fa83.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/42000000/41320000/41316800/41316768/82443702.jpg?impolicy=resizecrop&rw=598&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/2e07dd03.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        },
+        {
+          "src": "https://images.trvl-media.com/hotels/42000000/41320000/41316800/41316768/f931c798.jpg?impolicy=resizecrop&rw=297&ra=fit"
+        }
+      ],
+      "rooms": [
+        {
+          "name": "Room, 1 King Bed, View (Grand Deluxe, eco)",
+          "size": "484 sq ft",
+          "bedSize": "1 King Bed",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "14"
+        },
+        {
+          "name": "Room, 2 Twin Beds, City View",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "18"
+        },
+        {
+          "name": "Room, 2 Twin Beds, View (eco)",
+          "size": "484 sq ft",
+          "bedSize": "2 Twin Beds",
+          "policy": "Fully refundable",
+          "poepleSleeps": "Sleeps 3",
+          "price": "25"
+        }
+      ],
+      "amenities": {
+        "dinner": true,
+        "linch": true,
+        "Pool": true,
+        "Free WiFi": true,
+        "Parking included": true,
+        "Air conditioning": true,
+        "Spa": true,
+        "Restaurant": true
+      },
+      "map": "350, hotel pyasa, behind bhaji mandai, shukrawar peth, Pune, maharashtra, 411002",
+      "aboutArea": {
+        "title": "About this area",
+        "place": "Pune",
+        "desc": "Located in Pune, Conrad Pune by Hotel Rose Lodge is in the business district and near the airport. Tribal Museum and Raja Dinkar Kelkar Museum are cultural highlights, and some of the area's landmarks include Muttha Towers and Shaniwar Wada. Bund Garden and ABC farms are also worth visiting."
+      },
+      "aboutProperty": {
+        "title": "Hotel Rose Lodgea",
+        "subTitle": "3-star hotel",
+        "desc": "You can look forward to water-park access, a garden, and a restaurant at Hotel Rose Lodge. Stay connected with free WiFi in public areas. a coffee shop/cafe, and a hair salon. Indulge in a body treatment and a massage at the onsite spa. Enjoy a meal at the two onsite restaurants. Free in-room WiFi, with speed of 25+ Mbps, is available to all guests, along with dry cleaning/laundry services and a bar.",
+        "languages": {
+          "English": true,
+          "German": true,
+          "Hindi": true
+        }
+      },
+      "policies": {
+        "Check-in": {
+          "from": "Check-in from 3:00 PM - anytime",
+          "early": "Early check-in subject to availability",
+          "express": "Express check-in",
+          "minAge": "Minimum check-in age - 18"
+        },
+        "Check-out": {
+          "before": "Check-out before noon",
+          "early": "Late check-out subject to availability",
+          "express": "Express check-out"
+        },
+        "paymentType": {
+          "americanExpress": true,
+          "masterCard": true,
+          "visa": true
+        }
+      },
+      "price": "14",
+      "rating": "2.8",
+      "reviews": "3"
+    }
+  ],
+  "cars": [
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+     {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Economy",
+      "name": "Ford Figo 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/3b70b06a-c10d-459d-ae27-0c4b89e7183a.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Mini",
+      "name": "Hyundai I10 Grand 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/9180d2c1-ba15-42db-b0f4-4e88ab972bda.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Mini",
+      "name": "Hyundai I10 Grand 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/9180d2c1-ba15-42db-b0f4-4e88ab972bda.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "108",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Compact",
+      "name": "Toyota Etios 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/4109290a-f688-47e4-b97f-d67315c629f0.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "124",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Compact",
+      "name": "Toyota Etios 1.2 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/4109290a-f688-47e4-b97f-d67315c629f0.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "124",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Midsize",
+      "name": "Maruti Ciaz 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/31cac5dc-bcfb-4c6d-88ec-2c3cfcd9807f.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "180",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
+    },
+    {
+      "type": "Midsize",
+      "name": "Maruti Ciaz 1.5 or similar",
+      "city": "Mumbai",
+      "image": "https://mediaim.expedia.com/cars/14/31cac5dc-bcfb-4c6d-88ec-2c3cfcd9807f.jpg?impolicy=resizecrop&ra=fit&rh=165&rw=165",
+      "price": "180",
+      "amenities": {
+        "passangers": true,
+        "doors": true,
+        "millage": true,
+        "Airconditioning": true,
+        "fuelInfo": true,
+        "manual": true
+      },
+      "cancellation": true,
+      "location": {
+        "map": "Chattarpati Shivaji Int Apt T1, Mumbai, IND 400099"
+      }
     }
   ]
 }

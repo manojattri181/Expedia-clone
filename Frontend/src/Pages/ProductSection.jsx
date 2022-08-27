@@ -1,17 +1,31 @@
-import { Flex } from '@chakra-ui/react'
-import React from 'react'
-import ProductCard from '../Components/ProductCard'
+import { useSelector } from "react-redux"
+import Error from "../Components/Error";
+import Loading from "../Components/Loading";
+import ProductCard from "../Components/ProductCard"
 
 const ProductSection = () => {
+  const {data,isLoading,isError} = useSelector((store)=>{ 
+    return {
+     data:store.AppReducer.data,
+     isLoading:store.AppReducer.isLoading,
+     isError:store.AppReducer.isError
+    }
+  });
+console.log(isLoading);
   return (
-    <Flex m="auto" direction={"column"} rowGap="10px">
-       <ProductCard />
-       <ProductCard />
-       <ProductCard />
-       <ProductCard />
-       <ProductCard />
-       <ProductCard />
-    </Flex>
+    <div className='flex shrink flex-col gap-y-7'>
+      {
+        isLoading && <Loading />
+      }
+      {
+        data?.map((item,i)=>(
+          <ProductCard key={i} {...item} />
+        ))
+      }
+      {
+        isError   && <Error />
+      }
+    </div>
   )
 }
 

@@ -9,13 +9,15 @@ import { AiFillCreditCard } from 'react-icons/ai'
 import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const ButtonPage = () =>{
     const navigate = useNavigate();
+    const [email,setEmail] = useState()
     const handleClick = (e) =>{
         e.preventDefault();
-        alert("Your payment is successful")
-        navigate("/lastpage")
+        alert("Your payment is successful");
+        navigate("/lastpage");
     }
     return (
     <div id="whole-page">
@@ -143,7 +145,6 @@ const ButtonPage = () =>{
                 </div>
 
                 {/* manage your booking part  */}
-
                 <div className="box5">
                     <h2 style={{fontSize:"22px",fontWeight:"bold",marginBottom:"13px"}}>Manage your booking</h2>
                     <hr style={{borderTop:"1px solid #616161",marginBottom:"17px"}}/>
@@ -237,4 +238,4 @@ const ButtonPage = () =>{
     </div>
     )
 }
-export {ButtonPage}
+export default ButtonPage;

@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "../Components/Simplenav";
+import NavbarImg from "../Components/NavbarImg";
 import  Last  from "../Components/Last";
 
 const Lastpage = () =>{
     return (
         <>
-            <Navbar/>
+            <NavbarImg/>
             <Last/>
         </>
     )
