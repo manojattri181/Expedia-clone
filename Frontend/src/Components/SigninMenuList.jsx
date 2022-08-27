@@ -36,7 +36,7 @@ const SigninMenuList = () => {
                 <Text m='7px 0px' fontSize='0.8rem'>Save 10% or more on thousands of properties with member prices.</Text>
 
                 <MenuItem w='100%'>
-                    <Button w='100%' onClick={handleClickSignIn} m='15px 0px' color='white' bg="#3662d8">Sign in</Button>
+                    <Button w='100%' _hover={'none'} onClick={handleClickSignIn} m='15px 0px' color='white' bg="#3662d8">Sign in</Button>
                 </MenuItem>
                 <MenuItem w='100%'>
                     <Button onClick={handleClickSignUp} m='15px 0px' w='100%' _hover={{ color: '#3662d8' }} variant={'flushed'}>Sign up, it's free</Button>
