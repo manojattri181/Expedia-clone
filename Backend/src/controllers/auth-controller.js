@@ -61,7 +61,7 @@ const newtoken = (user) => {
     {
       data: user,
     },
-    process.env.SECRET_KEY,
+    "masai",
     { expiresIn: "12h" }
   );
 };
