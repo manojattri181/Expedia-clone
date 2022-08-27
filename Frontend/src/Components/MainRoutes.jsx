@@ -9,6 +9,8 @@ import S_Flights from '../Pages/S_Flights'
 import S_Car from '../Pages/S_Car'
 import SingleStaysPage from '../Pages/SingleStaysPage'
 import ProductSection from '../Pages/ProductSection'
+import S_Packages from '../Pages/S_Packages'
+import S_Holiday from '../Pages/S_Holiday'
 
 const MainRoutes = () => {
     return (
@@ -22,6 +24,8 @@ const MainRoutes = () => {
             <Route path='/nav_car' element={<S_Car/>} />
             <Route path="/product" element={ <Product/>} />
             <Route path='/stays' element={< SingleStaysPage/>} />
+            <Route path='/nav_packages' element={<S_Packages/>} />
+            <Route path='/nav_holiday' element={<S_Holiday/>} />
         </Routes>
     )
 }
