@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
+import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import S_Barcode_Component from "../Components/S_Barcode_Component";
 import S_Flexible_H_D from "../Components/S_Flexible_H_D";
@@ -18,6 +19,7 @@ export default function S_Flights() {
       <S_Simple_image_box2 />
       <S_Barcode_Component />
       <S_ScrollBox_option />
+      <Footer />
     </Box>
   );
 }

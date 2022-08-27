@@ -8,6 +8,7 @@ import {
   Checkbox,
   Button,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import React from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
@@ -16,6 +17,7 @@ import { AiFillFacebook } from "react-icons/ai";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { Signigfun } from "../Redux/Auth-reducer/action";
+import { useNavigate } from "react-router-dom";
 
 export default function S_SignIn() {
   const [email, setEmail] = useState("");
@@ -27,9 +29,22 @@ export default function S_SignIn() {
       dispatch(Signigfun({ email: email, password: password }));
     }
   }
+  const navigate = useNavigate()
   return (
     <Box>
-      <Box h={"60px"} border={"1px solid black"}></Box>
+      <Box
+        display={"flex"}
+        alignItems={"center"}
+        h={"60px"}
+        border={"1px solid black"}
+      >
+        <Image
+          onClick={() => navigate("/")}
+          cursor={"pointer"}
+          marginLeft={"7%"}
+          src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1"
+        />
+      </Box>
 
       <Box
         margin={"auto"}
@@ -118,7 +133,7 @@ export default function S_SignIn() {
           <label style={{ color: "white" }} htmlFor="">
             o
           </label>
-          <Link style={{ color: "blue", cursor: "pointer" }}> Create one</Link>
+          <Link onClick={()=>navigate('/create_account')} style={{ color: "blue", cursor: "pointer" }}> Create one</Link>
         </Box>
         <Box mt={"25px"} display="flex" justifyContent={"center"}>
           <label htmlFor="">or continue with</label>
