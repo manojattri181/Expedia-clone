@@ -1,11 +1,11 @@
 import React from 'react'
-import Totalpage from '../Components/Totalpage'
+import Totalpage from "../Components/Totalpage"
 
 const Paymentpage = () =>{
     return (
-        <>
+        <div>
             <Totalpage/>
-        </>
+        </div>
     )
 }
-export {Paymentpage}
+export default Paymentpage

@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./Simplenav";
 import { ButtonPage } from "./Buttonpage";
 
 const Totalpage = () =>{
@@ -10,4 +10,4 @@ const Totalpage = () =>{
     </div>
     )
 }
-export {Totalpage};
+export default Totalpage;

@@ -8,8 +8,15 @@ import { MdError } from 'react-icons/md'
 import { AiFillCreditCard } from 'react-icons/ai'
 import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
+import { useNavigate } from "react-router-dom";
 
 const ButtonPage = () =>{
+    const navigate = useNavigate();
+    const handleClick = (e) =>{
+        e.preventDefault();
+        alert("Your payment is successful")
+        navigate("/lastpage")
+    }
     return (
     <div id="whole-page">
         <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"10px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
@@ -75,7 +82,7 @@ const ButtonPage = () =>{
                         <p style={{color:"green",display:"flex",marginTop:"10px",marginBottom:"14px",alignItems:"center"}}><TbChevronRight/>  We use secure transmission <TbChevronRight/>  We protect your personal information</p>
                         <p>Debit/Credit Card</p>
                         <hr style={{borderTop:"1px solid #616161"}}/>
-                        <div style={{display:"flex",height:"60px",marginTop:"15px"}}>
+                        <div style={{display:"flex",height:"60px",marginTop:"15px"}} className="carddetail">
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="" />
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_american_express.svg" alt="" />
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_china_union_pay.svg" alt="" />
@@ -177,7 +184,7 @@ const ButtonPage = () =>{
                     </div>
                     <p>By clicking on the button below, I acknowledge that I have reviewed the <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/privacy?rfrr=HOT.CKO.Privacy">Privacy Statement</a>and <a style={{color:"#4d4dd8"}} href="https://travel.state.gov/content/passports/en/alertswarnings.html"> Government Travel Advice</a> and have reviewed and accept the <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/Checkout/V1/HotelRulesAndRestrictions?tripid=8132b31c-00d9-59d2-a079-de7141902c86&rfrr=HOT.CKO.Rules&np=1">Rules & Restrictions</a>and <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/terms?rfrr=HOT.CKO.Terms">Terms of Use</a></p>
                     <p style={{color:"green",display:"flex",marginTop:"7px",alignItems:"center"}}><TbChevronRight/> Change of plans? No problem. You can cancel for free</p>
-                    <button id="complete-btn">Complete Booking {">"}</button>
+                    <button id="complete-btn" onClick={handleClick}>Complete Booking {">"}</button>
                     <div style={{display:"flex",alignItems:"center"}}>
                     <HiLockClosed/>&nbsp;&nbsp;
                     <p>We use secure transmission and encrypted storage to protect your personal information.</p>
