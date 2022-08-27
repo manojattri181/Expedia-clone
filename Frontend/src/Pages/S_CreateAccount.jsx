@@ -10,14 +10,15 @@ import {
   Alert,
   Image,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
 import { FcGoogle } from "react-icons/fc";
 import { AiFillFacebook } from "react-icons/ai";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Signigfun } from "../Redux/Auth-reducer/action";
 import { Link, useNavigate } from "react-router-dom";
+import { Createaccount } from "../Redux/Auth-reducer/action";
 
 export default function CreateAccount() {
   const [email, setEmail] = useState("");
@@ -25,21 +26,36 @@ export default function CreateAccount() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const createAccountError = useSelector(
+    (data) => data.AuthReducer.createAccountError
+  );
+  const successfullyCreated = useSelector(
+    (data) => data.AuthReducer.successfullyCreated
+  );
+  const errorData = useSelector((data) => data.AuthReducer.errorData);
 
   function SendSignInRequest() {
-    //   if(email !== '' && password !== ''){
-    //     dispatch(Signigfun({email: email, password: password}))
-    //   }
-    if (
-      email === "" ||
-      password === "" ||
-      firstName === "" ||
-      lastName === ""
-    ) {
-      alert("Fill Form");
-    }
+    dispatch(
+      Createaccount({
+        email: email,
+        password: password,
+        firstName: firstName,
+        lastName: lastName,
+      })
+    );
   }
-  const navigate = useNavigate()
+
+  // console.log(successfullyCreated)
+
+
+  useEffect(() => {
+    if (successfullyCreated) {
+      alert("Your Account Sucessfully Created");
+      navigate("/");
+    }
+  }, [successfullyCreated]);
+  
   return (
     <Box>
       <Box
@@ -49,8 +65,8 @@ export default function CreateAccount() {
         border={"1px solid black"}
       >
         <Image
-          onClick={()=> navigate('/')}
-          cursor={'pointer'}
+          onClick={() => navigate("/")}
+          cursor={"pointer"}
           marginLeft={"7%"}
           src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1"
         />
@@ -78,7 +94,16 @@ export default function CreateAccount() {
             border={`2px solid`}
             type={"email"}
           />
-          {/* {email === '' ? <FormLabel color={'red'}>Email is required.</FormLabel>:<FormLabel></FormLabel>} */}
+          {createAccountError &&
+            errorData
+              .filter((e) => {
+                return e.param === "email";
+              })
+              .map((e, i) => (
+                <FormLabel key={i} mt={"5px"} color={"red"}>
+                  {e.msg}
+                </FormLabel>
+              ))}
         </Box>
         <Box mb={"20px"}>
           <FormLabel>Enter First name</FormLabel>
@@ -90,7 +115,16 @@ export default function CreateAccount() {
             border={`2px solid`}
             type={"text"}
           />
-          {/* {firstName === '' ? <FormLabel color={'red'}>First name is required.</FormLabel>:<FormLabel></FormLabel>} */}
+          {createAccountError &&
+            errorData
+              .filter((e) => {
+                return e.param === "firstName";
+              })
+              .map((e, i) => (
+                <FormLabel key={i} mt={"5px"} color={"red"}>
+                  {e.msg}
+                </FormLabel>
+              ))}
         </Box>
         {/* last name */}
         <Box mb={"20px"}>
@@ -116,7 +150,16 @@ export default function CreateAccount() {
             border={`2px solid`}
             type={"password"}
           />
-          {/* {password === '' ? <FormLabel color={'red'}>Password is required.</FormLabel>:<FormLabel></FormLabel>} */}
+          {createAccountError &&
+            errorData
+              .filter((e) => {
+                return e.param === "password";
+              })
+              .map((e, i) => (
+                <FormLabel key={i} mt={"5px"} color={"red"}>
+                  {e.msg}
+                </FormLabel>
+              ))}
         </Box>
         <Box mb={"20px"}>
           <Checkbox size={"lg"} defaultChecked>

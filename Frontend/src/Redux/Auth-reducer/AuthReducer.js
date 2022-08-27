@@ -1,10 +1,26 @@
-import { SIGNIN_FAILURE, SIGNIN_REQUEST, SIGNIN_SUCCESS, SIGNOUT } from "./actionTypes";
+import { StatLabel } from "@chakra-ui/react";
+import {
+  CREATE_FAILURE,
+  CREATE_REQUEST,
+  CREATE_SUCCESS,
+  SIGNIN_FAILURE,
+  SIGNIN_REQUEST,
+  SIGNIN_SUCCESS,
+  SIGNOUT,
+} from "./actionTypes";
 
 const signInData = {
+  userData: {},
   token: "",
-  isAuth: true,
+  isAuth: false,
   isLooding: false,
   isError: false,
+
+  
+  successfullyCreated: false,
+  createAccountLooding: false,
+  createAccountError: false,
+  errorData: [],
 };
 
 export const AuthReducer = (state = signInData, action) => {
@@ -20,7 +36,8 @@ export const AuthReducer = (state = signInData, action) => {
         ...state,
         isLooding: false,
         isAuth: true,
-        token: payload,
+        token: payload.token,
+        userData: payload.data,
       };
     case SIGNIN_FAILURE:
       return {
@@ -28,11 +45,42 @@ export const AuthReducer = (state = signInData, action) => {
         isLooding: false,
         isError: true,
       };
-    case SIGNOUT: 
+    case CREATE_REQUEST:
       return {
         ...state,
-        isAuth: false
-      }
+        createAccountLooding: true,
+      };
+    case CREATE_SUCCESS:
+      return {
+        ...state,
+        createAccountLooding: false,
+        successfullyCreated: true,
+        createAccountError: false,
+        isAuth: true,
+        userData: payload,
+      };
+    case CREATE_FAILURE:
+      return {
+        ...state,
+        createAccountLooding: false,
+        successfullyCreated: false,
+        createAccountError: true,
+        errorData: payload,
+      };
+    case SIGNOUT:
+      return {
+        ...state,
+        userData: {},
+        token: "",
+        isAuth: false,
+        isLooding: false,
+        isError: false,
+
+        successfullyCreated: false,
+        createAccountLooding: false,
+        createAccountError: false,
+        errorData: [],
+      };
     default:
       return state;
   }

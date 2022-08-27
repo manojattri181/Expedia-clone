@@ -10,26 +10,36 @@ import {
   Link,
   Image,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
 import { FcGoogle } from "react-icons/fc";
 import { AiFillFacebook } from "react-icons/ai";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Signigfun } from "../Redux/Auth-reducer/action";
 import { useNavigate } from "react-router-dom";
 
 export default function S_SignIn() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
+
+  const isAuth = useSelector(data => data.AuthReducer.isAuth)
+  const isError = useSelector(data => data.AuthReducer.isError)
 
   function SendSignInRequest() {
     if (email !== "" && password !== "") {
       dispatch(Signigfun({ email: email, password: password }));
     }
   }
-  const navigate = useNavigate()
+
+  useEffect(()=>{
+    if(isAuth){
+      navigate('/')
+    }
+  },[isAuth])
+  
   return (
     <Box>
       <Box
@@ -68,11 +78,14 @@ export default function S_SignIn() {
             border={`2px solid`}
             type={"email"}
           />
-          {email === "" ? (
-            <FormLabel color={"red"}>Email is required.</FormLabel>
+          { !isError && email === "" ? (
+            <FormLabel color={"red.400"}>Email is required.</FormLabel>
           ) : (
             <FormLabel></FormLabel>
           )}
+          {
+            isError ? <FormLabel color={"red"}>User is not registered</FormLabel>: <FormLabel></FormLabel>
+          }
         </Box>
         <Box mb={"20px"}>
           <FormLabel>Enter Password</FormLabel>
@@ -85,7 +98,7 @@ export default function S_SignIn() {
             type={"password"}
           />
           {password === "" ? (
-            <FormLabel color={"red"}>Password is required.</FormLabel>
+            <FormLabel color={"red.400"}>Password is required.</FormLabel>
           ) : (
             <FormLabel></FormLabel>
           )}
