@@ -11,7 +11,6 @@ const ProductSection = () => {
      isError:store.AppReducer.isError
     }
   });
-console.log(isLoading);
   return (
     <div className='flex shrink flex-col gap-y-7'>
       {
@@ -19,7 +18,7 @@ console.log(isLoading);
       }
       {
         data?.map((item,i)=>(
-          <ProductCard key={i} {...item} />
+           <ProductCard key={i} {...item} />
         ))
       }
       {

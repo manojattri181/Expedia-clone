@@ -10,4 +10,4 @@ const SingleStaysPage = () => {
   )
 }
 
-export default SingleStaysPage
+export default SingleStaysPage;

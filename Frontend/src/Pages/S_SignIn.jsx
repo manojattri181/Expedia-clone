@@ -29,7 +29,7 @@ export default function S_SignIn() {
   }
   return (
     <Box>
-      <Box h={"60px"} border={"1px solid black"}></Box>
+      {/* <Box h={"60px"} border={"1px solid black"}></Box> */}
 
       <Box
         margin={"auto"}

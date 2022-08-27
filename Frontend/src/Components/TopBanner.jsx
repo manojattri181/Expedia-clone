@@ -14,6 +14,7 @@ import appBanner from "../Assets/HomePage_Images/Top-app-banner.webp";
 import QR from "../Assets/HomePage_Images/QR.webp";
 import SummerBanner from "../Assets/HomePage_Images/Summer-banner.jpg";
 import { useNavigate } from "react-router-dom";
+import HomeSearchBar from "./HomeSearchBar";
 
 const TopBanner = () => {
 
@@ -24,6 +25,7 @@ const TopBanner = () => {
 
   return (
     <Stack w={{ sm: "90%", md: "90%", lg: "80%" }} m={['50px 10px', '50px auto', '50px auto', '50px auto']} gap="2.5rem">
+       <HomeSearchBar />
       {/* Download app banner */}
       <Flex direction={['column', 'column', 'column', 'row']} w="100%" borderRadius="8px" border="0.2px solid gray">
         <Box w={['100%', '100%', '100%', '35%']}>

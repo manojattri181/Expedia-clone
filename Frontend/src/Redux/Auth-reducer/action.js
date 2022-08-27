@@ -8,7 +8,6 @@ export const Signigfun = (data) => dispatch => {
   axios.post("https://reqres.in/api/login",data)
     .then((response) => {
       dispatch({ type: SIGNIN_SUCCESS, payload: response.data.token })
-      console.log(response.data.token)
     }).catch((e) => {
       dispatch({ type: SIGNIN_FAILURE })
     })

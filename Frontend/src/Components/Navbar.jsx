@@ -11,14 +11,12 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
 } from '@chakra-ui/react'
 import { useRef } from 'react';
-import { useState } from 'react';
 import SigninMenuList from './SigninMenuList';
 import UserDetail from './UserDetail';
 import { useSelector } from 'react-redux';
@@ -31,10 +29,6 @@ const Navbar = () => {
     const isAuth = useSelector((store) => store.AuthReducer.isAuth)
 
     return (
-
-      {/*  <div className="nav">
-            <img id="nav-img" src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" alt="www.expedia.com" />          
-        </div> */}
 
         <Box w='100%'>
             <Flex align='center' p='1rem' fontSize='14px' bg='#343b53' h='50px' w='100%'>

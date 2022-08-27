@@ -21,7 +21,7 @@ const ImageSlider = ({w,h,borderRadius,data}) => {
         <div className='min-w-max h-full'>
        <img  style={{width:w,height:h,objectFit:"cover",borderRadius:borderRadius }}  src={data[image].src} alt="img"/>
         </div>
-       <div className='flex items-center rounded-full hover:opacity-60 justify-center w-8 h-8 z-10 bg-black cursor-pointer opacity-40 absolute top-1/2 right-1'>
+       <div className='flex items-center rounded-full hover:opacity-60  justify-center w-8 h-8 z-10 bg-black cursor-pointer opacity-40 absolute top-1/2 right-1'>
        <button  onClick={()=>handleFunc(1)}>
         <BiChevronRight size="36px" color="white"/>
         </button>
