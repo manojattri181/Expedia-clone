@@ -1,4 +1,4 @@
-import { Box, Button, Container, Flex, Heading, Image, Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Container, Flex, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react';
 import logo from '../Assets/HomePage_Images/expedia_logo.svg';
 import { FaHotel, FaTicketAlt, FaUserCircle } from 'react-icons/fa'
@@ -22,6 +22,7 @@ import { useState } from 'react';
 import SigninMenuList from './SigninMenuList';
 import UserDetail from './UserDetail';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -31,14 +32,9 @@ const Navbar = () => {
     const isAuth = useSelector((store) => store.AuthReducer.isAuth)
 
     return (
-
-      {/*  <div className="nav">
-            <img id="nav-img" src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" alt="www.expedia.com" />          
-        </div> */}
-
         <Box w='100%'>
             <Flex align='center' p='1rem' fontSize='14px' bg='#343b53' h='50px' w='100%'>
-                <Text color='white' >Welcome to Expedia.com. Continue to the India site at <Link textDecoration='underline' href='#'>Expedia.co.in</Link> </Text>
+                <Text color='white' >Welcome to Expedia.com. Continue to the India site at <Link textDecoration='underline' to='/'>Expedia.co.in</Link> </Text>
             </Flex>
 
             <Flex justify='space-around' align='center' p='1rem 0px' borderBottom='0.2px solid gray'>
@@ -49,15 +45,23 @@ const Navbar = () => {
                             More travel <ChevronDownIcon _hover={{ color: 'blue' }} />
                         </MenuButton>
                         <MenuList boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' minW='300px'>
-                            <MenuItem display='flex' mt='0.8rem' gap='1rem'>
-                                <FaHotel size='1.4rem' /> Stays
-                            </MenuItem>
-                            <MenuItem display='flex' mt='0.8rem' gap='1rem'>
-                                <MdFlight size='1.4rem' /> Flights
-                            </MenuItem>
-                            <MenuItem display='flex' mt='0.8rem' gap='1rem'>
-                                <IoMdCar size='1.4rem' /> Cars
-                            </MenuItem>
+                            <Link to='/nav_hotel'>
+                                <MenuItem display='flex' mt='0.8rem' gap='1rem'>
+                                    <FaHotel size='1.4rem' /> Stays
+                                </MenuItem>
+                            </Link>
+
+                            <Link to='/nav_flights'>
+                                <MenuItem display='flex' mt='0.8rem' gap='1rem'>
+                                    <MdFlight size='1.4rem' /> Flights
+                                </MenuItem>
+                            </Link>
+
+                            <Link to='/nav_car'>
+                                <MenuItem display='flex' mt='0.8rem' gap='1rem'>
+                                    <IoMdCar size='1.4rem' /> Cars
+                                </MenuItem>
+                            </Link>
                             <MenuItem display='flex' mt='0.8rem' gap='1rem'>
                                 <BsHandbagFill size='1.4rem' /> Packages
                             </MenuItem>
@@ -94,7 +98,7 @@ const Navbar = () => {
                     <Box>
                         <BsBellFill className='hoverIcons' />
                     </Box>
-                    <Box>
+                    <Box display='flex' alignItem='center'>
                         {isAuth ? (
                             <UserDetail />
                         ) : (
@@ -115,7 +119,6 @@ const Navbar = () => {
                         <DrawerCloseButton />
                         <DrawerHeader>Explore</DrawerHeader>
                         <DrawerBody>
-
                             <Flex m='25px auto' align='center' gap='0.6rem'>
                                 <BsGlobe className='hoverIcons' />
                                 <Text _hover={{ color: 'blue', cursor: 'pointer' }}>English</Text>

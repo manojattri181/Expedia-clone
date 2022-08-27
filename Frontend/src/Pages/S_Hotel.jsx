@@ -10,7 +10,6 @@ import Navbar from '../Components/Navbar'
 export default function S_Hotel() {
   return (
     <Box>
-      <Navbar />
       <Box h={"230px"} border={"1px solid black"}></Box>
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Ideas for your next trip
