@@ -55,7 +55,6 @@ export default function S_SignIn() {
           src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1"
         />
       </Box>
-
       <Box
         margin={"auto"}
         w={"30%"}

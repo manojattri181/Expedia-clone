@@ -11,7 +11,6 @@ import S_Simple_image_box2 from '../Components/S_Simple_image_box2'
 export default function S_Car() {
   return (
     <Box>
-        <Navbar/>
         <Box h={"230px"} border={"1px solid black"}></Box>
         <Box mt={'50px'}></Box>
       <S_Flexible_H_D 
