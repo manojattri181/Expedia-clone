@@ -15,11 +15,11 @@ body{
     margin-top: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #nav-img{
     max-width: 40vw;
     height: 29px;
-    margin-left: 150px;
 }
 #whole-page{
     width: 80%;
@@ -157,3 +157,45 @@ body{
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     margin-top: 30px;
 }
+#lastbutton{
+    border: 2px solid #74c4e5;
+    background-color: #cce1f3;
+    border-radius: 20px;
+    margin: auto;
+    margin: 30px 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 35px;
+  }
+  .lastdiv{
+    height: auto;
+    width: 55%;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+@media only screen and (max-width: 850px) {
+    #whole-page{
+        width:92%;
+        margin: auto;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .twopage{
+        width:100%;
+        display: block;
+    }
+    .carddetail{
+        overflow: hidden;
+    }
+    .lastdiv{
+        width: 80%;
+    }
+    #lastbutton{
+        padding: 7px 20px;
+    }
+  }
+  
