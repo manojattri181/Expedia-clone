@@ -2,7 +2,7 @@ import { SIGNIN_FAILURE, SIGNIN_REQUEST, SIGNIN_SUCCESS, SIGNOUT } from "./actio
 
 const signInData = {
   token: "",
-  isAuth: true,
+  isAuth: false,
   isLooding: false,
   isError: false,
 };

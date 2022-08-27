@@ -19,7 +19,7 @@ const TopBanner = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    // navigate('/product', { replace: true })
+    navigate('/nav_hotel', { replace: true })
   }
 
   return (
