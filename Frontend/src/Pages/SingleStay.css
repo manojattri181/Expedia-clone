@@ -51,3 +51,39 @@
     cursor: pointer;
 
 }
+
+/* 999999999999999999999999999999999999999999999 */
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .header {
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid red;
+  }
+  
+  .header_link {
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    outline: none;
+    /* border: 1px solid red; */
+  }
+  
+  .selected {
+    border-bottom: 3px solid #3662d8;
+    color: #3662d8;
+  }
+  
