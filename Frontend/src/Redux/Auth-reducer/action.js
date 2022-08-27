@@ -7,6 +7,7 @@ export const Signigfun = (data) => dispatch => {
 
   axios.post("https://expedia-apiproject.herokuapp.com/auth/login",data)
     .then((response) => {
+   //   dispatch({ type: SIGNIN_SUCCESS, payload: response.data.token })
       dispatch({ type: SIGNIN_SUCCESS, payload: response.data})
       // console.log(response)
     }).catch((e) => {

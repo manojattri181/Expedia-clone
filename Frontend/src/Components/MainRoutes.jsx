@@ -3,16 +3,17 @@ import HomePage from '../Pages/HomePage'
 import  Paymentpage  from '../Pages/Paymentpage'
 import  Lastpage  from '../Pages/Lastpage'
 import Product from '../Pages/Product'
+import Totalpage  from './Totalpage'
 import CreateAccount from '../Pages/S_CreateAccount'
 import S_Hotel from '../Pages/S_Hotel'
 import S_SignIn from '../Pages/S_SignIn'
 import S_Flights from '../Pages/S_Flights'
 import S_Car from '../Pages/S_Car'
 import SingleStaysPage from '../Pages/SingleStaysPage'
+import Error404 from './Error404'
 import ProductSection from '../Pages/ProductSection'
 import S_Packages from '../Pages/S_Packages'
 import S_Holiday from '../Pages/S_Holiday'
-
 const MainRoutes = () => {
     return (
         <Routes>
@@ -27,6 +28,7 @@ const MainRoutes = () => {
             <Route path='/nav_car' element={<S_Car/>} />
             <Route path="/product" element={ <Product/>} />
             <Route path='/stays' element={< SingleStaysPage/>} />
+            <Route path='*' element={< Error404/>} />
             <Route path='/nav_packages' element={<S_Packages/>} />
             <Route path='/nav_holiday' element={<S_Holiday/>} />
         </Routes>
