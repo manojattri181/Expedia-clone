@@ -41,7 +41,7 @@ router.get("", async (req, res) => {
     if (req.query.dinner) {
       query.push({
         $match: {
-          "amenities.dinner": req.query.dinner,
+          "amenities.dinner": Boolean(req.query.dinner),
         },
       });
     }
@@ -49,7 +49,7 @@ router.get("", async (req, res) => {
     if (req.query.all) {
       query.push({
         $match: {
-          "amenities.all": req.query.all,
+          "amenities.all": Boolean(req.query.all),
         },
       });
     }
@@ -57,7 +57,7 @@ router.get("", async (req, res) => {
     if (req.query.lunch) {
       query.push({
         $match: {
-          "amenities.lunch": req.query.lunch,
+          "amenities.lunch": Boolean(req.query.lunch),
         },
       });
     }
@@ -65,7 +65,7 @@ router.get("", async (req, res) => {
     if (req.query.breakfast) {
       query.push({
         $match: {
-          "amenities.breakfast": req.query.breakfast,
+          "amenities.breakfast": Boolean(req.query.breakfast),
         },
       });
     }
