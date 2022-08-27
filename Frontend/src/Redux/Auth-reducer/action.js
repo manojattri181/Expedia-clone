@@ -11,7 +11,7 @@ export const Signigfun = (data) => dispatch => {
       // console.log(response)
     }).catch((e) => {
       dispatch({ type: SIGNIN_FAILURE })
-      console.log(e)
+      // console.log(e)
     })
 }
 
@@ -22,7 +22,7 @@ export const Createaccount = (data) => dispatch => {
   axios.post("https://expedia-apiproject.herokuapp.com/auth/register",data)
     .then((response) => {
       dispatch({ type: CREATE_SUCCESS, payload: response.data.data })
-      console.log(response)
+      // console.log(response)
     }).catch((e) => {
       dispatch({ type: CREATE_FAILURE, payload: e.response.data.errors})
       // console.log(e.response.data.errors)
