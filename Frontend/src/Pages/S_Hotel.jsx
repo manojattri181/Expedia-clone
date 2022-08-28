@@ -7,11 +7,16 @@ import S_Simple_image_box from "../Components/S_Simple_image_box";
 import S_Simple_image_box2 from "../Components/S_Simple_image_box2";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import HomeSearch from "../Components/HomeSearch";
+import HomeSearchBar from "../Components/HomeSearchBar";
 
 export default function S_Hotel() {
   return (
     <Box>
-      <Box h={"230px"} border={"1px solid black"}></Box>
+      <Navbar />
+      <Box w="84%" m="auto" mt="14" mb="6">
+           <HomeSearchBar />
+      </Box>
       <Text mt={"15px"} mb={"15px"} fontWeight={500} ml={"8%"} fontSize={"4xl"}>
         Ideas for your next trip
       </Text>

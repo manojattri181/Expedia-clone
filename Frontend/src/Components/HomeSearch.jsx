@@ -21,7 +21,7 @@ const HomeSearch = () => {
    const [checkInDate,setCheckinDate] = useState(new Date().toJSON().slice(0, 10));
    const [checkOutDate,setCheckoutDate] = useState(new Date().toJSON().slice(0, 10));
    const [query,setQuery] = useState("");
-   const [city,setCity] = useState("");
+   const [city,setCity] = useState( searchparam.get("city")||"");
    const [x,setX] = useState("");
    const dispatch = useDispatch();
    const ref  = useRef(null);
@@ -29,22 +29,22 @@ const HomeSearch = () => {
    const searchdata = useSelector((items)=> items.AppReducer.data);
 
       useDebouce(()=>{
-         setX(query);
+         setX(query);        
          },700)
          
       const calledData =()=>{
             dispatch(fetchData(x));
-      }
-      
-      const handleFocus =()=>{
-         console.log(ref.current)
-         ref.current.focus()
-      }
-
-    const handleSet =(name,city)=>{
-      setQuery(name);
-      setCity(city);
-      dispatch(fetchData(city));
+         }
+         
+         const handleFocus =()=>{
+            ref.current.focus()
+         }
+         
+         const handleSet =(name,city)=>{
+            setQuery(name);
+            setCity(city);
+            localStorage.setItem("city",JSON.stringify(city));
+            dispatch(fetchData(city));
     }
 
     useEffect(()=>{
@@ -57,11 +57,12 @@ const HomeSearch = () => {
 
     useEffect(()=>{
       calledData();
+      setSearchparam({city:query}) 
     },[setSearchparam,x]);
 
  return (
           <div >
-            <div className='w-full flex justify-start gap-4' >
+            <div className='w-full flex justify-center gap-4' >
 
            {/* Going to */}
            <div>

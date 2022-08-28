@@ -51,24 +51,24 @@ export const AppReducer = (state = Data,action) => {
                     isLoading:false
                 }
                 case types.GET_SINGLE_PRODUCT_REQUEST:
-      return {
-        ...state,
-        isLoading: true,
-        isError: false,
-      };
-    case types.GET_SINGLE_PRODUCT_REQUEST:
-      return {
-        ...state,
-        singleProduct: payload,
-        isLoading: false,
-        isError: false,
-      };
-    case types.GET_SINGLE_PRODUCT_FALIURE:
-      return {
-        ...state,
-        isError: true,
-        isLoading: false,
-      };
+                      return {
+                        ...state,
+                        isLoading: true,
+                        isError: false,
+                      };
+                    case types.GET_SINGLE_PRODUCT_REQUEST:
+                      return {
+                        ...state,
+                        singleProduct: payload,
+                        isLoading: false,
+                        isError: false,
+                      };
+                    case types.GET_SINGLE_PRODUCT_FALIURE:
+                      return {
+                        ...state,
+                        isError: true,
+                        isLoading: false,
+                      };
               default:
                  return state
     } 
