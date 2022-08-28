@@ -4,14 +4,14 @@ import { BiLinkExternal } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 import Map from '../Map'
 
-const AreaSection = () => {
+const AreaSection = ({singleProduct}) => {
+ 
   return (
-    <Box  display={"flex"}  boxShadow= "rgba(0, 0, 0, 0.35) 0px 5px 15px">
+    <Box  display={"flex"}  boxShadow= "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px">
         <Box  width="40%" padding={"1rem"}>
             <Text fontSize={"22px"} fontWeight="500">About this area</Text>
-            <Text fontSize={"20px"} margin="2rem 0 1rem 0" fontWeight="500">Mumbai</Text>
-            <Text fontSize={"14px"}>Located in Goregaon neighborhood, The Westin Mumbai Garden City 
-                is connected to a shopping center. Traveling with kids? Don't miss Film City.</Text>
+            <Text fontSize={"20px"} margin="2rem 0 1rem 0" fontWeight="500">{singleProduct.aboutArea.place||"Mumbai"}</Text>
+            <Text fontSize={"14px"}>{singleProduct.aboutArea.desc||"Located in Goregaon neighborhood, The Westin Mumbai Garden City is connected to a shopping center. Traveling with kids? Don't miss Film City."}</Text>
                 <Text
               display={"flex"}
              

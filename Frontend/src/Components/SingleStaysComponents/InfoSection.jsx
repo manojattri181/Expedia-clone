@@ -12,9 +12,10 @@ import {
 import { AiOutlineWifi } from "react-icons/ai";
 import { BsSnow } from "react-icons/bs";
 import Map from "../Map";
-const InfoSection = () => {
+const InfoSection = ({singleProduct}) => {
+  
   return (
-    <Box display="flex" marginTop={"2rem"}>
+    <Box display="flex" boxShadow={"rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"} marginTop={"2rem"}>
       <Box
         style={{
           //   border: "1px solid red",
@@ -25,24 +26,24 @@ const InfoSection = () => {
         }}
       >
         <Text fontSize={"28px"} fontWeight={"bold"} color="#141d38">
-          The Westin Mumbai Garden City
+          {singleProduct.title || "Pride Hotel"}
         </Text>
         <StarRatings
-          rating={4.603}
+          rating={Number(singleProduct.rating || 4.2)}
           starDimension="15px"
           starSpacing="3px"
           starRatedColor="gray"
         />
         <Text as={"h1"} fontWeight={"bold"} margin={"0.5rem 0"} color="#141d38">
-          4.6/5 Wonderful
+          {singleProduct?.rating || 4.2} /5 Wonderful
         </Text>
         <Text as={"small"}>
-          Guests rated this property 4.7/5 for cleanliness.
+          Guests rated this property {singleProduct.rating ||4.2}/5 for cleanliness.
         </Text>
         <Text>
           <Link to="">
             <h3 className="text-sm font-semibold text-blue mt-1 hover:underline">
-              see all 212 reviews {">"}
+              see all {singleProduct.reviews || 482} reviews {">"}
             </h3>
           </Link>
         </Text>
@@ -108,11 +109,10 @@ const InfoSection = () => {
       </Box>
       <Box width="35%" >
         <Box  borderRadius="10px">
-          <Map width="350px" height="250px" />
+          <Map city={singleProduct.map || "5 University Road, Shivaji Nagar, Pune, Maharashtra, 411 005"} width="350px" height="250px" />
         </Box>
         <Box  fontSize="small">
-          International Business Park, Oberoi Garden City, Goregaon East,
-          Mumbai, Maharashtra, 400063
+          {singleProduct.map ||"5 University Road, Shivaji Nagar, Pune, Maharashtra, 411 005"}
         </Box>
         <Box>
           <Text

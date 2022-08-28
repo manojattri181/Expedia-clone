@@ -10,6 +10,7 @@ import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import RoomsSection from "./SingleStaysComponents/RoomsSection";
 
 const ButtonPage = () =>{
     const navigate = useNavigate();
@@ -19,6 +20,8 @@ const ButtonPage = () =>{
         alert("Your payment is successful");
         navigate("/lastpage");
     }
+   let details = JSON.parse(localStorage.getItem("roomes"))
+//    console.log(details,"roomes")
     return (
     <div id="whole-page">
         <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"10px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
@@ -197,12 +200,12 @@ const ButtonPage = () =>{
 
                 <div className="box7">
                     <div style={{}} >
-                    <img style={{padding:"4px",width:"100%",borderRadius:"10px"}} src="https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/00f711b1_l.jpg" alt="" />
+                    <img style={{padding:"4px",width:"100%",borderRadius:"10px"}} src={details?.images[0]?.src} alt={details.title} />
                     </div>
                     <div style={{padding:"20px"}}>
-                        <p><b>DoubleTree by Hilton Goa-Panaji</b></p>
-                        <p><b>4.2/5</b> Very good (53 reviews)</p>
-                        <p>Guests rated this property 4.3/5 for cleanliness</p>
+                        <p><b>{details.title}</b></p>
+                        <p><b>{details.rating}/5</b> Very good ({details.reviews} reviews)</p>
+                        <p>Guests rated this property {details.rating}/5 for cleanliness</p>
                         <p style={{marginTop:"10px",marginBottom:"10px"}}>1 Room: King, Executive Room, Balcony, River View</p>
                         <p><b>Check-in</b>: Fri, Sep 9</p>
                         <p><b>Check-out</b>: Sat, Sep 10</p>
@@ -217,16 +220,16 @@ const ButtonPage = () =>{
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p>1 room x 1 night</p>
-                        <p>$219.07</p>
+                        <p>${+details.price}</p>
                     </div>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p>Taxes and fees !</p>
-                        <p>$39.43</p>
+                        <p>${Math.floor(+details.price*0.28)}</p>
                     </div>
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p><b>Total</b></p>
-                        <p><b>$258.50</b></p>
+                        <p><b>${+details.price + Math.floor(+(details.price*0.28))}</b></p>
                     </div>
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <p><b>Not included in your total</b></p>
