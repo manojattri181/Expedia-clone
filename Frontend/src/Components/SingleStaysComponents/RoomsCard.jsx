@@ -1,4 +1,4 @@
-import { Box, Button, Text } from '@chakra-ui/react'
+import { Box, Button, Text, useToast } from '@chakra-ui/react'
 import React from 'react'
 import { AiOutlineWifi } from 'react-icons/ai'
 import { BsSnow } from 'react-icons/bs'
@@ -9,11 +9,23 @@ import { Link, useNavigate } from 'react-router-dom'
 import ImageSlider from '../ImageSlider'
 
 const RoomsCard = ({images,roomes,singleProduct}) => {
+  const toast  =useToast();
     const navigate = useNavigate()
    const handleClick=()=>{
     localStorage.setItem('roomes', JSON.stringify(singleProduct));
-    alert("Going to Payment Page!")
-    navigate("/payment")
+    toast({
+      title: `Going to Payment Page!`,
+      status: 'success',
+      duration: 700,
+      position: 'top',
+      isClosable: true,
+    })
+    // alert("Going to Payment Page!");
+    setTimeout(()=>{
+      navigate("/payment");
+    },2000)
+    // alert("Going to Payment Page!")
+    // navigate("/payment")
    }
     
   return (

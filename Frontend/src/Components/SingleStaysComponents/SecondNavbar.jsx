@@ -97,6 +97,9 @@ console.log(message)
         borderBottom: "0.1px solid grey",
       }}
     >
+      <Box ref={overviewRef}>
+      <Box>
+            <Gallery singleProduct={singleProduct} />
       <Box className="sticky">
         <Box className="header" ref={headerRef}>
           <button
@@ -157,9 +160,6 @@ console.log(message)
          
         </Box>
       </Box>
-      <Box ref={overviewRef}>
-      <Box>
-            <Gallery singleProduct={singleProduct} />
           </Box>
         <InfoSection singleProduct={singleProduct}/>
       </Box>

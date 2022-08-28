@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+
 const SingleStaysPage = () => {
   const { _id } = useParams();
   // const [currentProduct, setCurrentProduct] = useState({});
@@ -57,13 +58,13 @@ const SingleStaysPage = () => {
        
       
       </div>
-      <Box >
+      <Box mt="4">
           <Advt src={advt} />
           <Advt1 src={advt1} />
         </Box>
         </div>
-        <Footer
-         />
+        <Footer />
+
     </div> 
     
   );
@@ -71,6 +72,3 @@ const SingleStaysPage = () => {
 
 export default SingleStaysPage;
 
-// <div className="bg-background min-h-screen w-10/12 flex m-auto pt-4 justify-evenly">
-
-// </div>;
