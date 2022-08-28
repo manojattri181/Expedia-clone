@@ -1,7 +1,7 @@
  import logo from "../Assets/HomePage_Images/expedia_logo.svg";
  import { FaHotel, FaTicketAlt, FaUserCircle } from "react-icons/fa";
  import { MdFlight } from "react-icons/md";
- import { IoMdCar } from "react-icons/io";
+ import { IoIosArrowDown, IoMdCar } from "react-icons/io";
  import { BsHandbagFill, BsBellFill, BsGlobe } from "react-icons/bs";
  import { RiUserStarFill } from "react-icons/ri";
  import { GiHamburgerMenu } from "react-icons/gi";

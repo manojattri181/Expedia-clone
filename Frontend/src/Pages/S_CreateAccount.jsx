@@ -9,6 +9,7 @@ import {
   Button,
   Alert,
   Image,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
@@ -33,8 +34,8 @@ export default function CreateAccount() {
   const successfullyCreated = useSelector(
     (data) => data.AuthReducer.successfullyCreated
   );
+  const toast = useToast();
   const errorData = useSelector((data) => data.AuthReducer.errorData);
-
   function SendSignInRequest() {
     dispatch(
       Createaccount({
@@ -51,8 +52,17 @@ export default function CreateAccount() {
 
   useEffect(() => {
     if (successfullyCreated) {
-      alert("Your Account Sucessfully Created");
-      navigate("/");
+      toast({
+        title: `Account Created Successfull`,
+        status: 'success',
+        duration: 700,
+        position: 'top',
+        isClosable: true,
+      })
+      // alert("Your Account Sucessfully Created");
+      setTimeout(()=>{
+        navigate("/");
+      },2000)
     }
   }, [successfullyCreated]);
   

@@ -8,7 +8,7 @@ import TopBanner from '../Components/TopBanner'
 const HomePage = () => {
     return (
         <Box>
-            {/* <Navbar /> */}
+            <Navbar />
             <TopBanner />
             <MiddleCards />
             <MiddleBanner />
