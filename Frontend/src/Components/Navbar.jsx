@@ -32,10 +32,6 @@ const Navbar = () => {
 
     return (
 
-      {/*  <div className="nav">
-            <img id="nav-img" src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1" alt="www.expedia.com" />          
-        </div> */}
-
         <Box w='100%'>
             <Flex align='center' p='1rem' fontSize='14px' bg='#343b53' h='50px' w='100%'>
                 <Text color='white' >Welcome to Expedia.com. Continue to the India site at <Link textDecoration='underline' href='#'>Expedia.co.in</Link> </Text>
