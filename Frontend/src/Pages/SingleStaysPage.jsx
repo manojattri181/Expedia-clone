@@ -64,6 +64,7 @@ const SingleStaysPage = () => {
         </Box>
         </div>
         <Footer />
+
     </div> 
     
   );
@@ -71,6 +72,3 @@ const SingleStaysPage = () => {
 
 export default SingleStaysPage;
 
-// <div className="bg-background min-h-screen w-10/12 flex m-auto pt-4 justify-evenly">
-
-// </div>;
