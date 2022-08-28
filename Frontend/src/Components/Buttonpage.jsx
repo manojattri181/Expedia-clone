@@ -1,4 +1,3 @@
-import React from "react";
 import { FcCalendar } from 'react-icons/fc'
 import { GoPerson } from 'react-icons/go'
 import {TbChevronRight} from 'react-icons/tb'
@@ -10,6 +9,7 @@ import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
 import RoomsSection from "./SingleStaysComponents/RoomsSection";
 
 const ButtonPage = () =>{
@@ -24,7 +24,7 @@ const ButtonPage = () =>{
 //    console.log(details,"roomes")
     return (
     <div id="whole-page">
-        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"10px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
+        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"30px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
         <div className="box1">
             <FcCalendar style={{height:"50px",width:"50px"}}/>
             <div>

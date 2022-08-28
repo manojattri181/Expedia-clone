@@ -15,16 +15,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../Redux/App-reducer/action';
 import useDebouce from './Debouncing';
 import { useRef } from 'react';
-
+let city = JSON.parse(localStorage.getItem("city"));
 const SearchBar = () => {
    const [searchparam,setSearchparam] = useSearchParams();
    const [checkInDate,setCheckinDate] = useState(new Date().toJSON().slice(0, 10));
    const [checkOutDate,setCheckoutDate] = useState(new Date().toJSON().slice(0, 10));
    const [query,setQuery] = useState("");
-   const [x,setX] = useState("");
+   const mycity = searchparam.get("city");
+   const [x,setX] = useState(mycity || "");
    const dispatch = useDispatch();
    const ref  = useRef(null);
-
    const searchdata = useSelector((items)=> items.AppReducer.data);
 
       useDebouce(()=>{
@@ -36,37 +36,40 @@ const SearchBar = () => {
       }
       
       const handleFocus =()=>{
-         console.log(ref.current)
          ref.current.focus()
       }
+      
+      const handleSet =(name,city)=>{
+         setQuery(name);
+         setSearchparam({city:city,Hotel:name})
+      } 
 
-    const handleSet =(name)=>{
-      setQuery(name);
-      dispatch(fetchData(name));
+    const handleRequest =()=>{
+       dispatch(fetchData(query));
     }
-    useEffect(()=>{
-       handleFocus();
-    },[])
+    
 
   useEffect(()=>{
      localStorage.setItem("dates",JSON.stringify({checkin:checkInDate,checout:checkOutDate}));
+     setSearchparam({city:city})
   },[checkInDate,checkOutDate])
 
     useEffect(()=>{
       calledData();
-    },[setSearchparam,x]);
+      handleFocus();
+    },[setSearchparam,x,city]);
 
  return (
           <div className='w-full flex justify-start gap-4'>
            {/* Going to */}
            <div>
              <Menu >
-            <MenuButton as={Button} w="300px" h="46px" bg="white"  border="1px solid black" >
+            <MenuButton  w="300px" h="46px" bg="white" pl="14px"  borderRadius={"10px"} border="1px solid black" >
             <div className='flex justify-start  items-center gap-3' >
                     <div><FaMapMarkerAlt size="20px" /></div>
                     <div className='flex flex-col justify-start items-start '>
                        <h3 className='text-sm font-normal '>Going to</h3>
-                       <h3  className='text-md font-medium'>{x}</h3>
+                       <h3  className='text-md font-medium'>{query}</h3>
                     </div>
               </div>
            </MenuButton>
@@ -78,10 +81,11 @@ const SearchBar = () => {
                       {
                          searchdata.length!==10 && searchdata.map((items)=>(
                            // <Link to="/product">
-                           <div key={items._id}className="w-72 px-3 py-1 hover:bg-background hover:text-black rounded-sm hover:cursor-pointer overflow-hidden" onClick={()=>handleSet(items.title)} >{items.aboutProperty.title}</div>
+                           <div key={items._id}className="w-72 px-3 py-1 hover:bg-background hover:text-black rounded-sm hover:cursor-pointer overflow-hidden" onClick={()=>handleSet(items.title,items.city)} >{items.aboutProperty.title}</div>
                            // </Link> 
                         ))
                       }
+
                </div>
            </MenuList>
            </Menu>
@@ -135,7 +139,7 @@ const SearchBar = () => {
            </Menu>
            </div>
            <div>
-               <Button  colorScheme='blue' w="130px" h="46px" fontWeight="md" fontSize="lg">Search</Button>
+               <Button  colorScheme='blue' w="130px" h="46px" fontWeight="md" fontSize="lg" onClick={handleRequest}>Search</Button>
            </div>
    </div>
  )

@@ -9,7 +9,6 @@ const Data = {
 
 export const AppReducer = (state = Data, action) => {
   const { type, payload } = action;
-  console.log("payload",payload)
   switch (type) {
     case types.GET_DATA_REQUEST:
       return {
@@ -30,7 +29,6 @@ export const AppReducer = (state = Data, action) => {
         isError: true,
         isLoading: false,
       };
-    // filter data request
     case types.FILTER_DATA_REQUEST:
       return {
         ...state,

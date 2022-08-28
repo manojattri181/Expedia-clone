@@ -14,10 +14,9 @@ let divider = {
   marginBottom:"20px",
   backgroundColor:"black"
 }
-
+let city = JSON.parse(localStorage.getItem("city"));
 const Filter = () => {
   const [searchParams,setSearchParams] = useSearchParams();
-  // getting category params from params
   const initial = searchParams.getAll("amenities");
   const [category,setCategory] = useState(initial || []);
   const initialSort = searchParams.get("SortBy");
@@ -69,17 +68,17 @@ const Filter = () => {
 
   useEffect(() => {
    if(category || SortBy){
-        setSearchParams({amenities:category,SortBy : SortBy});
+        setSearchParams({city:city,amenities:category,SortBy : SortBy});
       }
     
       problem();
-  }, [category,setSearchParams,SortBy,x]);
+  }, [category,setSearchParams,SortBy,x,city]);
   
 
   return (
    <div className='w-64 hidden tablet:block '>
     {/* Map section */}
-    <Map />
+    <Map city={city} width="240px" height="220px"/>
       <div style={divider}></div>
 
 
@@ -111,17 +110,15 @@ const Filter = () => {
            </MenuList>
            </Menu>
            </div>
-
-
                  <div style={divider}></div>
 
   {/* Sorting Functionaity */}
 
   <div>
-    <h3 className='text-lg font-semibold mb-6'>Filter by</h3>
+    <h3 className='text-lg font-semibold mb-6'></h3>
      {/* sort by price ascending and descending */}
      <div className='flex flex-col justify-start gap-y-3 mt-6' onChange={handleSort}>
-    <h3 className='text-md font-semibold mb-2' >Price</h3>
+    <h3 className='text-md font-semibold mb-2' >Sort by</h3>
           <div className='flex justify-start gap-4' >
             <input type="radio" style={{padding:"3px"}} name="sortBy" value="asc" defaultChecked={SortBy==="asc"} />
             <label className='text-md font-medium'>Ascending</label>
@@ -134,7 +131,7 @@ const Filter = () => {
     
      {/* Amenitines */}
      <div className='flex flex-col justify-start gap-y-2 mt-6'>
-    <h3 className='text-md font-semibold mb-2'>Amenities</h3>
+    <h3 className='text-md font-semibold mb-2'>Filter by</h3>
           <div className='flex justify-start gap-4'>
             <input type="checkbox" style={{padding:"3px"}} value="All" defaultChecked={category.includes("All")}  onChange={handleCategoryChange} />
             <label className='text-md font-medium'>All</label>
