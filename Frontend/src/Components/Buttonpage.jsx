@@ -10,6 +10,7 @@ import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
 
 const ButtonPage = () =>{
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ const ButtonPage = () =>{
     }
     return (
     <div id="whole-page">
-        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"10px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
+        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"30px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
         <div className="box1">
             <FcCalendar style={{height:"50px",width:"50px"}}/>
             <div>

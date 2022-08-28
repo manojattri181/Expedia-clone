@@ -42,7 +42,10 @@ const SearchBar = () => {
       const handleSet =(name,city)=>{
          setQuery(name);
          setSearchparam({city:city,Hotel:name})
-         dispatch(fetchData(name));
+      } 
+
+    const handleRequest =()=>{
+       dispatch(fetchData(query));
     }
     
 
@@ -136,7 +139,7 @@ const SearchBar = () => {
            </Menu>
            </div>
            <div>
-               <Button  colorScheme='blue' w="130px" h="46px" fontWeight="md" fontSize="lg">Search</Button>
+               <Button  colorScheme='blue' w="130px" h="46px" fontWeight="md" fontSize="lg" onClick={handleRequest}>Search</Button>
            </div>
    </div>
  )

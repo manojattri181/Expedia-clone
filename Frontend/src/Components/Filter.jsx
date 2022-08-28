@@ -110,8 +110,6 @@ const Filter = () => {
            </MenuList>
            </Menu>
            </div>
-
-
                  <div style={divider}></div>
 
   {/* Sorting Functionaity */}
