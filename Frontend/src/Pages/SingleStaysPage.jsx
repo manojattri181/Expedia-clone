@@ -16,6 +16,8 @@ import Advt from "../Components/Advt";
 import { GetData, GetSingleProduct } from "../Redux/App-reducer/action";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 const SingleStaysPage = () => {
   const { _id } = useParams();
   // const [currentProduct, setCurrentProduct] = useState({});
@@ -41,7 +43,7 @@ const SingleStaysPage = () => {
    
     
     <div>
-      <img src={nav} alt="advertisement" />
+      <Navbar />
       <div style={{display:"flex"}}>
       <div style={{ width: "75%", margin: "0 2% 0 5%" }}>
         <Box>
@@ -60,6 +62,8 @@ const SingleStaysPage = () => {
           <Advt1 src={advt1} />
         </Box>
         </div>
+        <Footer
+         />
     </div> 
     
   );
