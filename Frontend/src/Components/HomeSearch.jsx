@@ -16,11 +16,12 @@ import { fetchData } from '../Redux/App-reducer/action';
 import useDebouce from './Debouncing';
 import { useRef } from 'react';
 
-const SearchBar = () => {
+const HomeSearch = () => {
    const [searchparam,setSearchparam] = useSearchParams();
    const [checkInDate,setCheckinDate] = useState(new Date().toJSON().slice(0, 10));
    const [checkOutDate,setCheckoutDate] = useState(new Date().toJSON().slice(0, 10));
    const [query,setQuery] = useState("");
+   const [city,setCity] = useState("");
    const [x,setX] = useState("");
    const dispatch = useDispatch();
    const ref  = useRef(null);
@@ -40,10 +41,12 @@ const SearchBar = () => {
          ref.current.focus()
       }
 
-    const handleSet =(name)=>{
+    const handleSet =(name,city)=>{
       setQuery(name);
-      dispatch(fetchData(name));
+      setCity(city);
+      dispatch(fetchData(city));
     }
+
     useEffect(()=>{
        handleFocus();
     },[])
@@ -57,20 +60,22 @@ const SearchBar = () => {
     },[setSearchparam,x]);
 
  return (
-          <div className='w-full flex justify-start gap-4'>
+          <div >
+            <div className='w-full flex justify-start gap-4' >
+
            {/* Going to */}
            <div>
              <Menu >
-            <MenuButton as={Button} w="300px" h="46px" bg="white"  border="1px solid black" >
+            <MenuButton as={Button} w="440px" h="46px" bg="white"  border="1px solid black" >
             <div className='flex justify-start  items-center gap-3' >
                     <div><FaMapMarkerAlt size="20px" /></div>
                     <div className='flex flex-col justify-start items-start '>
                        <h3 className='text-sm font-normal '>Going to</h3>
-                       <h3  className='text-md font-medium'>{x}</h3>
+                       <h3  className='text-md font-medium'>{x}  {city}</h3>
                     </div>
               </div>
            </MenuButton>
-           <MenuList mt="-56px" minW="300px">
+           <MenuList mt="-56px" minW="440px">
                <div className='w-full bg-white' onMouseOver={handleFocus}>
               <input type="text" placeholder='Where are you going?' style={{width:"300px",padding:"4px",fontSize:"18px",fontWeight:"bold",outline:"none"}} ref={ref} value={query} onChange={(e)=>setQuery(e.target.value)} />
                </div>
@@ -78,7 +83,7 @@ const SearchBar = () => {
                       {
                          searchdata.length!==10 && searchdata.map((items)=>(
                            // <Link to="/product">
-                           <div key={items._id}className="w-72 px-3 py-1 hover:bg-background hover:text-black rounded-sm hover:cursor-pointer overflow-hidden" onClick={()=>handleSet(items.title)} >{items.aboutProperty.title}</div>
+                           <div key={items._id}className="w-full px-3 py-1 mt-1 hover:bg-background hover:text-black rounded-sm hover:cursor-pointer overflow-hidden" onClick={()=>handleSet(items.title,items.city)} >{items.aboutProperty.title}, {items.city}</div>
                            // </Link> 
                         ))
                       }
@@ -134,11 +139,14 @@ const SearchBar = () => {
            </MenuButton>
            </Menu>
            </div>
-           <div>
-               <Button  colorScheme='blue' w="130px" h="46px" fontWeight="md" fontSize="lg">Search</Button>
+           </div>
+           <div className='w-full flex justify-center m-auto mt-6'>
+            <Link to="/product">
+               <Button  colorScheme='blue' w="160px" h="46px" fontWeight="md" fontSize="lg">Search</Button>
+            </Link>
            </div>
    </div>
  )
 }
 
-export default SearchBar;
+export default HomeSearch;

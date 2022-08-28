@@ -12,6 +12,7 @@ module.exports = {
       graylight:"#343B53",
       green:"#006400",
       darkgreen:"#0d7066",
+      banner:"#d3d3d3",
     },
     screens: {
       "mobile":"500px",

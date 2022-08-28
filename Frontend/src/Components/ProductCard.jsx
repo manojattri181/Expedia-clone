@@ -1,14 +1,19 @@
 import ImageSlider from './ImageSlider';
 import {MdPool,MdHotTub} from "react-icons/md";
+import { Link } from 'react-router-dom';
 
   
-const ProductCard = ({title,city,amenities,images,price,rating,reviews,rooms}) => {
+const ProductCard = ({_id,title,city,amenities,images,price,rating,reviews,rooms}) => {
 
   return (
      <div className='w-full flex justify-evenly gap-x-3 bg-white  rounded-lg shadow-md'>
         <div >
           <ImageSlider  data={images} w="240px"  h="180px" borderRadius="10px" />
         </div>
+        {/* Link route to single pages */}
+        <Link to={`/stays/${_id}`}>
+
+      
         <div className='w-full flex justify-start  py-2 laptop:w-fit  '>
         
         <div className='desktop:w-80 tablet:w-70'>
@@ -51,6 +56,7 @@ const ProductCard = ({title,city,amenities,images,price,rating,reviews,rooms}) =
             </div> 
         </div>
         </div>
+        </Link>
      </div>
   )
 }

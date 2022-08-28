@@ -22,17 +22,23 @@ import UserDetail from "./UserDetail";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, Container, Flex, Heading, Image, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
+import React from 'react';
+import logo from '../Assets/HomePage_Images/expedia_logo.svg';
+import { FaHotel, FaTicketAlt, FaUserCircle } from 'react-icons/fa'
+import { MdFlight } from 'react-icons/md'
+import { IoMdCar } from 'react-icons/io'
+import { BsHandbagFill, BsBellFill, BsGlobe } from 'react-icons/bs'
+import { RiUserStarFill } from 'react-icons/ri'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
 } from '@chakra-ui/react'
 import { useRef } from 'react';
-import { useState } from 'react';
 import SigninMenuList from './SigninMenuList';
 import UserDetail from './UserDetail';
 import { useSelector } from 'react-redux';
@@ -213,6 +219,7 @@ export default Navbar;
     const isAuth = useSelector((store) => store.AuthReducer.isAuth)
 
     return (
+
         <Box w='100%'>
             <Flex align='center' p='1rem' fontSize='14px' bg='#343b53' h='50px' w='100%'>
                 <Text color='white' >Welcome to Expedia.com. Continue to the India site at <Link textDecoration='underline' to='/'>Expedia.co.in</Link> </Text>
@@ -222,8 +229,8 @@ export default Navbar;
                 <Flex align='center' gap='1.5rem'>
                     <Image src={logo} />
                     <Menu>
-                        <MenuButton _hover={{ color: 'blue' }} color='#343b53' >
-                            More travel <ChevronDownIcon _hover={{ color: 'blue' }} />
+                        <MenuButton _hover={{ color: 'blue' }} color='#343b53'>
+                            More travel 
                         </MenuButton>
                         <MenuList boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' minW='300px'>
                             <Link to='/nav_hotel'>
