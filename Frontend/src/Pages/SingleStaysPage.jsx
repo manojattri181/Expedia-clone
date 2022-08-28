@@ -13,44 +13,55 @@ import advt from "../Assets/Advt/advt.jpg";
 import advt1 from "../Assets/Advt/advt1.jpg";
 import Advt1 from "../Components/Advt1";
 import Advt from "../Components/Advt";
-import { GetSingleProduct } from "../Redux/App-reducer/action";
+import { GetData, GetSingleProduct } from "../Redux/App-reducer/action";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 const SingleStaysPage = () => {
-  const { id } = useParams();
-  const [currentProduct, setCurrentProduct] = useState({});
-  const dispatch = useDispatch();
-
-  const product = useSelector((store) => store.AppReducer.singleProduct);
-  setCurrentProduct(product)
-  useEffect(() => {
-    if (Object.keys(product).length === 0 && id) {
-      dispatch(GetSingleProduct());
-      setCurrentProduct(product)
+  const { _id } = useParams();
+  // const [currentProduct, setCurrentProduct] = useState({});
+  const {data,isLoading,isError,singleProduct} = useSelector((store)=>{ 
+    return {
+     data:store.AppReducer.data,
+     isLoading:store.AppReducer.isLoading,
+     isError:store.AppReducer.isError,
+     singleProduct:store.AppReducer.singleProduct
     }
-  }, [dispatch,product,id]);
+  });
+  const dispatch = useDispatch();
+  useEffect(() => {
+   
+      dispatch(GetSingleProduct(_id));
+    
+      
+  },[ _id,data]);
   
-console.log(currentProduct)
+
+
   return (
+   
+    
     <div>
       <img src={nav} alt="advertisement" />
-      <div style={{ width: "75%", margin: "auto 5% 0",display:"flex" }}>
+      <div style={{display:"flex"}}>
+      <div style={{ width: "75%", margin: "0 2% 0 5%" }}>
         <Box>
-          <Box>
-            <Gallery />
-          </Box>
-          <Box>
-            <SecondNavbar />
-          </Box>
+          
+          
+            <SecondNavbar singleProduct={singleProduct}/>
+         
         </Box>
-        {/* <Box >
+        
+
+       
+      
+      </div>
+      <Box >
           <Advt src={advt} />
           <Advt1 src={advt1} />
-        </Box> */}
-
-        {/* <div style={{ marginBottom: "500px" }} /> */}
-      </div>
-    </div>
+        </Box>
+        </div>
+    </div> 
+    
   );
 };
 

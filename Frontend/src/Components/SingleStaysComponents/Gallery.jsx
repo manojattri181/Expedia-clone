@@ -3,8 +3,10 @@ import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { BsArrowLeft } from "react-icons/bs";
 import { AiOutlineArrowLeft } from "react-icons/ai";
-const Gallery = () => {
-  
+import { useSelector } from "react-redux";
+const Gallery = ({singleProduct}) => {
+// console.log("images",images[0].src)
+
   return (
     <Box boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}>
         <Box  display="flex" alignItems={"center"} 
@@ -27,7 +29,7 @@ const Gallery = () => {
       >
         <GridItem rowSpan={2} colSpan={2} bg="red">
           <Image
-            src="https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/fb56c162.jpg?impolicy=resizecrop&rw=598&ra=fit"
+            src={singleProduct?.images[0].src ||"https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/w365h225x11y0-24f663ed.jpg?impolicy=resizecrop&rw=598&ra=fit"}
             width={"100%"}
             height="100%"
             alt="Dan Abramov"
@@ -36,7 +38,7 @@ const Gallery = () => {
         <GridItem colSpan={1} bg="green">
           {" "}
           <Image
-            src="https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/a896afa9.jpg?impolicy=resizecrop&rw=297&ra=fi"
+            src={singleProduct?.images[1].src ||"https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/2e07dd03.jpg?impolicy=resizecrop&rw=297&ra=fit"}
             width={"100%"}
             height="148px"
             alt="Dan Abramov"
@@ -45,7 +47,7 @@ const Gallery = () => {
         <GridItem colSpan={1} bg="green">
           {" "}
           <Image
-            src= "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/17824e0b.jpg?impolicy=resizecrop&rw=297&ra=fit"
+            src= {singleProduct?.images[2].src ||"https://images.trvl-media.com/hotels/1000000/450000/447300/447235/d3433776.jpg?impolicy=resizecrop&rw=297&ra=fit"}
             width={"100%"}
             height="148px"
             alt="Dan Abramov"
@@ -54,7 +56,7 @@ const Gallery = () => {
         <GridItem colSpan={1} bg="yellow">
           {" "}
           <Image
-            src="https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/66699a2e.jpg?impolicy=resizecrop&rw=297&ra=fit"
+            src={singleProduct?.images[3].src ||"https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/2e07dd03.jpg?impolicy=resizecrop&rw=297&ra=fit"}
             width={"100%"}
             height="148px"
             alt="Dan Abramov"
@@ -63,7 +65,7 @@ const Gallery = () => {
         <GridItem colSpan={1} bg="yellow">
           {" "}
           <Image
-            src= "https://images.trvl-media.com/hotels/4000000/3770000/3763800/3763792/40a28dff.jpg?impolicy=resizecrop&rw=297&ra=fit"
+            src= {singleProduct?.images[4].src ||"https://images.trvl-media.com/hotels/1000000/450000/447300/447235/d3433776.jpg?impolicy=resizecrop&rw=297&ra=fit"}
             width={"100%"}
             height="148px"
             alt="Dan Abramov"

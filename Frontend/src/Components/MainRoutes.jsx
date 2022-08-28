@@ -25,8 +25,8 @@ const MainRoutes = () => {
             <Route path='/nav_flights' element={<S_Flights/>} />
             <Route path='/nav_car' element={<S_Car/>} />
             <Route path="/product" element={ <Product/>} />
-            <Route path='/stays' element={< SingleStaysPage/>} />
-            <Route path='*' element={< Error404/>} />
+            <Route path='/product/:_id' element={<SingleStaysPage/>} />
+            <Route path='*' element={<Error404/>} />
             <Route path='/nav_packages' element={<S_Packages/>} />
             <Route path='/nav_holiday' element={<S_Holiday/>} />
         </Routes>
