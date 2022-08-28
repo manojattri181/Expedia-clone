@@ -1,8 +1,21 @@
 import React from "react";
-import { Grid, GridItem, Image } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { BsArrowLeft } from "react-icons/bs";
+import { AiOutlineArrowLeft } from "react-icons/ai";
 const Gallery = () => {
+  
   return (
-    <div>
+    <Box boxShadow={"rgba(0, 0, 0, 0.35) 0px 5px 15px;"}>
+        <Box  display="flex" alignItems={"center"} 
+        margin="15px 5px" paddingTop={"15px"}>
+            <Text >
+        <AiOutlineArrowLeft color="#3182ce" />
+        </Text>
+       
+            <Text margin="auto 0" className='text-sm font-semibold text-blue mt-4 hover:underline' >See all Propertieis</Text>
+       
+        </Box>
       <Grid
         h="300px"
         w="100%"
@@ -10,7 +23,7 @@ const Gallery = () => {
         templateRows="repeat(2, 1fr)"
         templateColumns="repeat(4, 1fr)"
         gap={0.5}
-        border="1px solid red"
+       
       >
         <GridItem rowSpan={2} colSpan={2} bg="red">
           <Image
@@ -57,7 +70,7 @@ const Gallery = () => {
           />
         </GridItem>
       </Grid>
-    </div>
+    </Box>
   );
 };
 

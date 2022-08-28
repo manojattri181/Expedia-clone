@@ -10,6 +10,17 @@ export const GetData = (params)=>(dispatch)=>{
     })
 };
 
+
+export const GetSingleProduct = (id)=>(dispatch)=>{
+    dispatch({type:types.GET_SINGLE_PRODUCT_REQUEST})
+    return axios.get(`https://expedia-apiproject.herokuapp.com/stays/${id}`,).then((res)=>{
+        // console.log(res);
+        dispatch({type:types.GET_SINGLE_PRODUCT_SUCCESS ,payload:res.data})
+    }).catch((err)=>{
+        dispatch({type:types.GET_SINGLE_PRODUCT_FALIURE})
+    })
+};
+
 export const fetchData = (params)=>(dispatch)=>{
     dispatch({type:types.FILTER_DATA_REQUEST})
     return axios.get(`https://expedia-apiproject.herokuapp.com/stays?q=${params}`).then((res)=>{
@@ -18,4 +29,5 @@ export const fetchData = (params)=>(dispatch)=>{
         dispatch({type:types.FILTER_DATA_FALIURE})
     })
 };
+
 

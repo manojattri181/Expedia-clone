@@ -1,8 +1,11 @@
 import { Box, Stack } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
-import InfoSection from "../Pages/InfoSection";
-import RoomsSection from "../Pages/RoomsSection";
-import "../Pages/SingleStay.css";
+import AreaSection from "./AreaSection";
+import InfoSection from "./InfoSection";
+import RoomsSection from "./RoomsSection";
+import "../../Pages/SingleStay.css";
+import AboutProperty from "./AboutProperty";
+import PoliciesSection from "./PoliciesSection";
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
@@ -28,7 +31,7 @@ const SecondNavbar = () => {
   const overviewRef = useRef(null);
   const roomsRef = useRef(null);
   const locationRef = useRef(null);
-  const amenitiesRef = useRef(null);
+  const aboutpropertyRef = useRef(null);
   const policiesRef = useRef(null);
   const reviewsRef = useRef(null);
 
@@ -36,7 +39,7 @@ const SecondNavbar = () => {
     { section: "Over View", ref: overviewRef },
     { section: "Rooms", ref: roomsRef },
     { section: "Location", ref: locationRef },
-    { section: "Amenities", ref: amenitiesRef },
+    { section: "About Property", ref: aboutpropertyRef },
     { section: "Policies", ref: policiesRef },
     { section: "Reviews", ref: reviewsRef },
   ];
@@ -83,6 +86,7 @@ const SecondNavbar = () => {
         //   zIndex: "10",
           left: "0",
         borderBottom: "0.1px solid grey",
+        // boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px"
       }}
     >
       
@@ -125,13 +129,13 @@ const SecondNavbar = () => {
           <button
             type="button"
             className={`header_link ${
-              visibleSection === "Amenities" ? "selected" : ""
+              visibleSection === "About Property" ? "selected" : ""
             }`}
             onClick={() => {
-              scrollTo(amenitiesRef.current);
+              scrollTo(aboutpropertyRef.current);
             }}
           >
-            Amenitis
+            About Property
           </button>
           <button
             type="button"
@@ -158,15 +162,19 @@ const SecondNavbar = () => {
         </Box>
       </Box>
       <Box ref={overviewRef}>
-        <InfoSection/>
+        <InfoSection />
       </Box>
       <Box ref={roomsRef}>
         <RoomsSection />
       </Box>
-      <Box ref={locationRef}></Box>
-      <Box ref={overviewRef}></Box>
-      <Box ref={roomsRef}></Box>
-      <Box ref={locationRef}></Box>
+      <Box ref={locationRef}><AreaSection /></Box>
+      <Box ref={aboutpropertyRef}>
+        <AboutProperty />
+      </Box>
+      <Box ref={policiesRef}>
+        <PoliciesSection />
+      </Box>
+      {/* <Box ref={locationRef}></Box> */}
     </Box>
   );
 };
