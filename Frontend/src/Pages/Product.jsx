@@ -9,13 +9,14 @@ import ProductSection from './ProductSection'
 import advt from "../Assets/Advt/advt.jpg"
 import advt1 from "../Assets/Advt/advt1.jpg"
 import Advt1 from '../Components/Advt1'
-import HomeSearchBar from '../Components/HomeSearchBar'
-
+import Navbar from '../Components/Navbar'
+const city = JSON.parse(localStorage.getItem("city"));
+console.log(city);
 const Product = () => {
   const dispatch = useDispatch();
-  const [searchParams] = useSearchParams();
+  const [searchParams,setSearchparam] = useSearchParams();
   const location = useLocation();
-  
+ 
    useEffect(()=>{
      const sortBy = searchParams.get("SortBy")
      const amenities = searchParams.getAll("amenities");
@@ -24,21 +25,22 @@ const Product = () => {
      let all = (amenities.includes("All"))?{
       dinner:"false", Lunch:"false",all:"true"
      }:"";
-
      const  queryParams ={ 
        params:{
-        dinner:dinner,
-        lunch:Lunch,
-        all:all,
+         city:city,
+         dinner:dinner,
+         lunch:Lunch,
+         all:all,
          sortBy : sortBy && "price",
-         sortOrder : sortBy
+         sortOrder : sortBy 
        }
      }
      dispatch(GetData(queryParams))
-   },[location.search])
+   },[location.search,city])
 
   return (
     <div className='bg-background min-h-screen'>
+      <Navbar />
     <div className='w-10/12 flex m-auto pt-4 justify-evenly pb-20' >
       <div>
       <SearchBar />
