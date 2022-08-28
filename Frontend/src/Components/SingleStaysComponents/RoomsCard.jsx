@@ -12,6 +12,7 @@ const RoomsCard = ({images,roomes,singleProduct}) => {
     const navigate = useNavigate()
    const handleClick=()=>{
     localStorage.setItem('roomes', JSON.stringify(singleProduct));
+    alert("Going to Payment Page!")
     navigate("/payment")
    }
     
