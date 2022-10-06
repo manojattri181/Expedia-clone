@@ -14,15 +14,7 @@ module.exports = {
       darkgreen:"#0d7066",
       banner:"#d3d3d3",
     },
-    screens: {
-      "mobile":"500px",
-      'tablet': '720px',
-      "filter":"820px",
-      'laptop': '1024px',
-      'desktop': '1280px',
-    },
     extend:{
-      
     }
   },
   plugins: [],

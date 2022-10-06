@@ -53,7 +53,7 @@ const Product = () => {
         </div>
          </div>
       </div>
-        <div className='gap-y-10 hidden filter:block'>
+        <div className='gap-y-10 hidden '>
         <Advt src={advt} />
         <Advt1 src={advt1}  />
         </div>
