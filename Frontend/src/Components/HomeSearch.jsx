@@ -57,17 +57,19 @@ const HomeSearch = () => {
 
     useEffect(()=>{
       calledData();
-      setSearchparam({city:query}) 
+      if(city){
+         setSearchparam({city:query}) 
+      }
     },[setSearchparam,x]);
 
  return (
           <div >
-            <div className='w-full flex justify-center gap-4' >
+            <div className='max-w-min   md:max-w-full flex flex-col items-center  gap-y-4 m-auto lg:flex-row justify-center lg:gap-y-7   lg:gap-x-4' >
 
            {/* Going to */}
            <div>
              <Menu >
-            <MenuButton as={Button} w="440px" h="46px" bg="white"  border="1px solid black" >
+            <MenuButton as={Button}  w={{ base: '300px', sm: '400px', md: '400px', lg: '440px' }} h="46px" bg="white"   border="1px solid black" >
             <div className='flex justify-start  items-center gap-3' >
                     <div><FaMapMarkerAlt size="20px" /></div>
                     <div className='flex flex-col justify-start items-start '>
@@ -76,7 +78,7 @@ const HomeSearch = () => {
                     </div>
               </div>
            </MenuButton>
-           <MenuList mt="-56px" minW="440px">
+           <MenuList mt="-56px" w={{ base: '300px', sm: '400px', md: '400px', lg: '440px' }}>
                <div className='w-full bg-white' onMouseOver={handleFocus}>
               <input type="text" placeholder='Where are you going?' style={{width:"300px",padding:"4px",fontSize:"18px",fontWeight:"bold",outline:"none"}} ref={ref} value={query} onChange={(e)=>setQuery(e.target.value)} />
                </div>
@@ -92,11 +94,15 @@ const HomeSearch = () => {
            </MenuList>
            </Menu>
            </div>
+            
+            <div className='flex flex-row gap-x-3 gap-y-3'>
+
+        
             {/* Check- in */}
            <div>
              <Menu>
-            <MenuButton as={Button} w="160px" h="46px" bg="white" border="1px solid black">
-              <div className='flex justify-start  items-center gap-3' >
+            <MenuButton as={Button} w={{ base: '140px', sm: '200px', md: '200px', lg: '160px' }} h="46px" bg="white" border="1px solid black">
+              <div className='flex justify-start  items-center gap-3 overflow-hidden' >
                     <div><BsCalendarEvent size="22px" /></div>
                     <div className='flex flex-col justify-start items-start'>
                        <h3 className='text-sm font-normal '>Check-in</h3>
@@ -104,7 +110,7 @@ const HomeSearch = () => {
                     </div>
               </div>
            </MenuButton>
-           <MenuList mt="-60px" w="160px">
+           <MenuList mt="-60px" w={{ base: '140px', sm: '200px', md: '200px', lg: '160px' }}>
               <Input type="date" value={checkInDate} border="none" onChange={(e)=>setCheckinDate(e.target.value)}/>
            </MenuList>
            </Menu>
@@ -112,8 +118,8 @@ const HomeSearch = () => {
            {/* Check-out */}
            <div >
            <Menu>
-            <MenuButton as={Button} w="160px" h="46px" bg="white" border="1px solid black">
-              <div className='flex justify-start  items-center gap-3' >
+            <MenuButton as={Button} w={{ base: '140px', sm: '200px', md: '200px', lg: '160px' }} h="46px" bg="white" border="1px solid black">
+              <div className='flex justify-start  items-center gap-3 overflow-hidden' >
                     <div><BsCalendarEvent size="22px" /></div>
                     <div className='flex flex-col justify-start items-start'>
                        <h3 className='text-sm font-normal '>Check-in</h3>
@@ -121,15 +127,16 @@ const HomeSearch = () => {
                     </div>
               </div>
            </MenuButton>
-           <MenuList mt="-60px" w="160px">
+           <MenuList mt="-60px" w={{ base: '140px', sm: '200px', md: '200px', lg: '160px' }}>
               <Input type="date" value={checkOutDate} border="none" onChange={(e)=>setCheckoutDate(e.target.value)}/>
            </MenuList>
            </Menu>
            </div>
+           </div>
            {/* Travellers */}
            <div>
              <Menu>
-            <MenuButton as={Button} w="200px" h="46px" bg="white" border="1px solid black">
+            <MenuButton as={Button} w={{ base: '300px', sm: '400px', md: '400px', lg: '200px' }} h="46px" bg="white" border="1px solid black">
             <div className='flex justify-start  items-center gap-3 overflow-hidden' >
                     <div><BsFillPersonFill size="24px" /></div>
                     <div className='flex flex-col justify-start items-start'>

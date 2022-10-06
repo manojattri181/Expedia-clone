@@ -5,19 +5,17 @@ import SearchBar from './SearchBar';
 
 const HomeSearchBar = () => {
   return (
-    <div className='w-full h-fit px-7 py-3  mt-1 mb-2 m-auto flex justify-center  border border-solid border-banner rounded-md'>
-        <Tabs mt="10px" m="auto" >
-      <TabList>
+    <div className='border border-solid border-banner rounded-md'>
+        <Tabs mt="10px">
+      {/* <TabList  className="w-9/12 overflow-hidden  lg:w-10/12  ">
         <Tab>Stays</Tab>
         <Tab >Flights</Tab>
         <Tab>Cars</Tab>
         <Tab>Packages</Tab>
         <Tab>Things to do</Tab>
-      </TabList>
-      <TabPanels>
-        <TabPanel>
-            <HomeSearch />
-        </TabPanel>
+      </TabList> */}
+      <TabPanels >
+        <TabPanel> <HomeSearch /></TabPanel>
         <TabPanel> <HomeSearch /></TabPanel>
         <TabPanel> <HomeSearch /></TabPanel>
         <TabPanel> <HomeSearch /></TabPanel>

@@ -204,7 +204,9 @@
                  <Text color='white' >Welcome to Expedia.com. Continue to the India site at <Link textDecoration='underline' to='/'>Expedia.co.in</Link> </Text>
              </Flex>
 
-            <Flex  justify='space-around' align='center' p='1rem 0px' borderBottom='0.2px solid gray'>
+
+            <Flex justify='space-around' align='center' p='1rem 0px' borderBottom='0.2px solid gray'>
+
                 <Flex align='center' gap='1.5rem'>
                   <Link to="/">
                     <Image src={logo} />
