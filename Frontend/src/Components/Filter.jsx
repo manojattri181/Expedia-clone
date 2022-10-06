@@ -68,6 +68,7 @@ const Filter = () => {
 
   useEffect(() => {
    if(category || SortBy){
+     localStorage.setItem("city",JSON.stringify(city));
         setSearchParams({city:city,amenities:category,SortBy : SortBy});
       }
     
@@ -76,12 +77,10 @@ const Filter = () => {
   
 
   return (
-   <div className='w-64 hidden tablet:block '>
+   <div className='w-64 md:block '>
     {/* Map section */}
     <Map city={city} width="240px" height="220px"/>
       <div style={divider}></div>
-
-
       <div>
       <h1 className='text-lg font-semibold mb-2'>Search by property name</h1>
              <Menu>

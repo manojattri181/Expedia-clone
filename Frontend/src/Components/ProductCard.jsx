@@ -14,10 +14,10 @@ const ProductCard = ({_id,title,city,amenities,images,price,rating,reviews,rooms
         <Link to={`/product/${_id}`}>
 
       
-        <div className='w-full flex justify-start  py-2 laptop:w-fit  '>
+        <div className='w-full flex justify-start  py-2 lg:w-fit  '>
         
-        <div className='desktop:w-80 tablet:w-70'>
-        <h3 className='text-xl font-semibold desktop:w-96 laptop:w-72 tablet:w-56'>{title}</h3>
+        <div className='lg:w-80 md:w-70'>
+        <h3 className='text-xl font-semibold  lg:w-72 md:w-56'>{title}</h3>
         <h1 className='text-sm mb-1'>{city}</h1>
         {/* logo */}
         <div className='flex gap-x-3'>
@@ -35,7 +35,7 @@ const ProductCard = ({_id,title,city,amenities,images,price,rating,reviews,rooms
          </div>
         }
         </div>
-        <div className='hidden mobile:block'>
+        <div className='hidden md:block'>
         <div className='mt-6 '>
        <h3 className='text-sm text-green font-light'>Fully refundable</h3>
        <h3 className='text-sm text-green font-light'>Reserve now,pay later</h3>

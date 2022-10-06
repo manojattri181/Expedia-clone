@@ -18,19 +18,17 @@ const Product = () => {
   const location = useLocation();
  
    useEffect(()=>{
+    const   city  = searchParams.get("city")
      const sortBy = searchParams.get("SortBy")
      const amenities = searchParams.getAll("amenities");
-     let dinner = amenities.includes("Dinner")?"true":""
-     let Lunch = amenities.includes("Lunch")?"true":"";
-     let all = (amenities.includes("All"))?{
-      dinner:"false", Lunch:"false",all:"true"
-     }:"";
+    //  let dinner = amenities.includes("Dinner")?"true":""
+    //  let Lunch = amenities.includes("Lunch")?"true":"";
+    //  let all = (amenities.includes("All"))?{
+    //   dinner:"false", Lunch:"false",all:"true"
+    //  }:"";
      const  queryParams ={ 
        params:{
          city:city,
-         dinner:dinner,
-         lunch:Lunch,
-         all:all,
          sortBy : sortBy && "price",
          sortOrder : sortBy 
        }
@@ -39,13 +37,13 @@ const Product = () => {
    },[location.search,city])
 
   return (
-    <div className='bg-background min-h-screen'>
+    <div className='min-w-full bg-background min-h-screen overflow-hidden'>
       <Navbar />
     <div className='w-10/12 flex m-auto pt-4 justify-evenly pb-20' >
       <div>
       <SearchBar />
       <div className='flex  m-auto mt-6 gap-x-6 '>
-        <div className='hidden filter:block'>
+        <div className='hidden md:block'>
         <Filter />
         </div>
         <div>
@@ -53,7 +51,7 @@ const Product = () => {
         </div>
          </div>
       </div>
-        <div className='gap-y-10 hidden '>
+        <div className='gap-y-10 ml-5 hidden lg:block'>
         <Advt src={advt} />
         <Advt1 src={advt1}  />
         </div>
