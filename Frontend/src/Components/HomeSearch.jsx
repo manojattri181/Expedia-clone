@@ -22,18 +22,19 @@ const HomeSearch = () => {
    const [checkOutDate,setCheckoutDate] = useState(new Date().toJSON().slice(0, 10));
    const [query,setQuery] = useState("");
    const [city,setCity] = useState( searchparam.get("city")||"");
-   const [x,setX] = useState("");
+   const [searchparams,setSearchparms] = useState("");
    const dispatch = useDispatch();
    const ref  = useRef(null);
 
    const searchdata = useSelector((items)=> items.AppReducer.data);
 
-      useDebouce(()=>{
-         setX(query);        
+        useDebouce(()=>{
+         setSearchparms(query);        
          },700)
          
-      const calledData =()=>{
-            dispatch(fetchData(x));
+
+        const calledData =()=>{
+            dispatch(fetchData(searchparams));
          }
          
          const handleFocus =()=>{
@@ -45,23 +46,25 @@ const HomeSearch = () => {
             setCity(city);
             localStorage.setItem("city",JSON.stringify(city));
             dispatch(fetchData(city));
-    }
+         }
 
-    useEffect(()=>{
-       handleFocus();
-    },[])
+         useEffect(()=>{
+            handleFocus();
+         },[])
 
-  useEffect(()=>{
-     localStorage.setItem("dates",JSON.stringify({checkin:checkInDate,checout:checkOutDate}));
-  },[checkInDate,checkOutDate])
+      useEffect(()=>{
+         localStorage.setItem("dates",JSON.stringify({checkin:checkInDate,checout:checkOutDate}));
+      },[checkInDate,checkOutDate])
+
 
     useEffect(()=>{
       calledData();
-      if(city){
-         setSearchparam({city:query}) 
+      if(query.length>0){
+         setSearchparam({city:query}); 
       }
-    },[setSearchparam,x]);
+    },[setSearchparam,searchparams]);
 
+console.log(searchparams,city);
  return (
           <div >
             <div className='max-w-min   md:max-w-full flex flex-col items-center  gap-y-4 m-auto lg:flex-row justify-center lg:gap-y-7   lg:gap-x-4' >
@@ -74,7 +77,7 @@ const HomeSearch = () => {
                     <div><FaMapMarkerAlt size="20px" /></div>
                     <div className='flex flex-col justify-start items-start '>
                        <h3 className='text-sm font-normal '>Going to</h3>
-                       <h3  className='text-md font-medium'>{x}  {city}</h3>
+                       <h3  className='text-md font-medium'>{searchparams} </h3>
                     </div>
               </div>
            </MenuButton>

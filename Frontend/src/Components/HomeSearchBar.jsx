@@ -7,13 +7,13 @@ const HomeSearchBar = () => {
   return (
     <div className='border border-solid border-banner rounded-md'>
         <Tabs mt="10px">
-      {/* <TabList  className="w-9/12 overflow-hidden  lg:w-10/12  ">
+      <TabList  className="overflow-hidden">
         <Tab>Stays</Tab>
         <Tab >Flights</Tab>
         <Tab>Cars</Tab>
         <Tab>Packages</Tab>
-        <Tab>Things to do</Tab>
-      </TabList> */}
+        <Tab >Things to do</Tab>
+      </TabList>
       <TabPanels >
         <TabPanel> <HomeSearch /></TabPanel>
         <TabPanel> <HomeSearch /></TabPanel>

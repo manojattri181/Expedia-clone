@@ -1,7 +1,7 @@
 const Advt = ({src}) => {
   return (
-    <div className='hidden laptop:block '>
-      <img style={{width:"160px"}} src={src} alt="advertisement" />
+    <div className='min-w-full w-40 hidden lg:block mt-6 '>
+      <img className="w-40" src={src} alt="advertisement" />
     </div>
   )
 }
