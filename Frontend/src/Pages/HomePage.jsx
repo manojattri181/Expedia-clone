@@ -1,6 +1,4 @@
-import { Box, Text } from '@chakra-ui/react'
-import React from 'react'
-import Footer from '../Components/Footer'
+import { Box } from '@chakra-ui/react'
 import MiddleBanner from '../Components/MiddleBanner'
 import MiddleCards from '../Components/MiddleCards'
 import Navbar from '../Components/Navbar'
@@ -10,6 +8,7 @@ import TopBanner from '../Components/TopBanner'
 const HomePage = () => {
     return (
         <Box>
+            <Navbar />
             <TopBanner />
             <MiddleCards />
             <MiddleBanner />
@@ -18,4 +17,4 @@ const HomePage = () => {
     )
 }
 
-export default HomePage
+export default HomePage;

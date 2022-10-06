@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux"
 import Error from "../Components/Error";
 import Loading from "../Components/Loading";
+import NoProduct from "../Components/NoProduct";
 import ProductCard from "../Components/ProductCard"
 
 const ProductSection = () => {
@@ -11,7 +12,6 @@ const ProductSection = () => {
      isError:store.AppReducer.isError
     }
   });
-console.log(isLoading);
   return (
     <div className='flex shrink flex-col gap-y-7'>
       {
@@ -19,8 +19,11 @@ console.log(isLoading);
       }
       {
         data?.map((item,i)=>(
-          <ProductCard key={i} {...item} />
+           <ProductCard key={i} {...item} />
         ))
+      }
+      {
+        data.length===0 && <NoProduct />
       }
       {
         isError   && <Error />

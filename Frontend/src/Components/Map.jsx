@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react'
-import { Link, useSearchParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { MdSettingsAccessibility } from 'react-icons/md';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 
 
-const Map = () => {
-let [searchparam] =useSearchParams();
-let city = searchparam.get("_city");
-  useEffect(()=>{
-  },[searchparam,city])
+const Map = ({city,width="240px",height="220px"}) => {
+ const [searchparam] = useSearchParams();
+ const mycity = searchparam.get("city");
+ const [_city,setCity] = useState(mycity || "")
+ const location = useLocation();
+ useEffect(()=>{
+    setCity(mycity)
+  },[location.search,searchparam])
   return (
     <div className="w-fit pb-4 m-auto  text-center bg-white border-1 border-solid border-black  rounded-2xl" >
-        <iframe title={city} width="240px" height="120" src={`https://maps.google.com/maps?q=${city || "delhi"}&t=&z=11&ie=UTF8&iwloc=&output=embed`} scrolling="no"></iframe>
+        <iframe style={{borderRadius:"10px"}} title={mycity} width={width} height={height} src={`https://maps.google.com/maps?q=${_city || "delhi"}&t=&z=11&ie=UTF8&iwloc=&output=embed`} scrolling="no"></iframe>
         <Link to="">
             <h3 className='text-sm font-semibold text-blue mt-4 hover:underline' >View in map</h3>
         </Link>

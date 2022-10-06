@@ -1,14 +1,19 @@
 import ImageSlider from './ImageSlider';
 import {MdPool,MdHotTub} from "react-icons/md";
+import { Link } from 'react-router-dom';
 
   
-const ProductCard = ({title,city,amenities,images,price,rating,reviews,rooms}) => {
+const ProductCard = ({_id,title,city,amenities,images,price,rating,reviews,rooms}) => {
 
   return (
      <div className='w-full flex justify-evenly gap-x-3 bg-white  rounded-lg shadow-md'>
         <div >
           <ImageSlider  data={images} w="240px"  h="180px" borderRadius="10px" />
         </div>
+        {/* Link route to single pages */}
+        <Link to={`/product/${_id}`}>
+
+      
         <div className='w-full flex justify-start  py-2 laptop:w-fit  '>
         
         <div className='desktop:w-80 tablet:w-70'>
@@ -47,10 +52,11 @@ const ProductCard = ({title,city,amenities,images,price,rating,reviews,rooms}) =
           <div className='w-fit  absolute bottom-0 right-3'>
             <p className='w-32  text-center text-white bg-darkgreen rounded-2xl text-xs px-1 py-1 font-semibold'>We have 5 left at</p>
           <p className='text-2xl font-bold'>${rooms[0].price}</p>
-          <p className='text-sm'>${+price+ (18%(+price))} total</p>
+          <p className='text-sm'>${+price+ (28%(+price))} total</p>
             </div> 
         </div>
         </div>
+        </Link>
      </div>
   )
 }

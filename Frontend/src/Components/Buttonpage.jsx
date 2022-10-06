@@ -1,4 +1,3 @@
-import React from "react";
 import { FcCalendar } from 'react-icons/fc'
 import { GoPerson } from 'react-icons/go'
 import {TbChevronRight} from 'react-icons/tb'
@@ -8,11 +7,24 @@ import { MdError } from 'react-icons/md'
 import { AiFillCreditCard } from 'react-icons/ai'
 import { HiLockClosed } from 'react-icons/hi'
 import "../style/Style.css"
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { Box, Image } from "@chakra-ui/react";
+import RoomsSection from "./SingleStaysComponents/RoomsSection";
 
 const ButtonPage = () =>{
+    const navigate = useNavigate();
+    const [email,setEmail] = useState()
+    const handleClick = (e) =>{
+        e.preventDefault();
+        alert("Your payment is successful");
+        navigate("/lastpage");
+    }
+   let details = JSON.parse(localStorage.getItem("roomes"))
+//    console.log(details,"roomes")
     return (
     <div id="whole-page">
-        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"10px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
+        <h1 style={{color: "#202843",fontSize: "1.4705882352941178em",marginTop:"30px",fontWeight:"bold"}}>Secure booking — only takes 2 minutes!</h1>
         <div className="box1">
             <FcCalendar style={{height:"50px",width:"50px"}}/>
             <div>
@@ -75,7 +87,7 @@ const ButtonPage = () =>{
                         <p style={{color:"green",display:"flex",marginTop:"10px",marginBottom:"14px",alignItems:"center"}}><TbChevronRight/>  We use secure transmission <TbChevronRight/>  We protect your personal information</p>
                         <p>Debit/Credit Card</p>
                         <hr style={{borderTop:"1px solid #616161"}}/>
-                        <div style={{display:"flex",height:"60px",marginTop:"15px"}}>
+                        <div style={{display:"flex",height:"60px",marginTop:"15px"}} className="carddetail">
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_master_card.svg" alt="" />
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_american_express.svg" alt="" />
                             <img src="https://a.travel-assets.com/dms-svg/payments/cards-cc_china_union_pay.svg" alt="" />
@@ -136,7 +148,6 @@ const ButtonPage = () =>{
                 </div>
 
                 {/* manage your booking part  */}
-
                 <div className="box5">
                     <h2 style={{fontSize:"22px",fontWeight:"bold",marginBottom:"13px"}}>Manage your booking</h2>
                     <hr style={{borderTop:"1px solid #616161",marginBottom:"17px"}}/>
@@ -177,7 +188,7 @@ const ButtonPage = () =>{
                     </div>
                     <p>By clicking on the button below, I acknowledge that I have reviewed the <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/privacy?rfrr=HOT.CKO.Privacy">Privacy Statement</a>and <a style={{color:"#4d4dd8"}} href="https://travel.state.gov/content/passports/en/alertswarnings.html"> Government Travel Advice</a> and have reviewed and accept the <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/Checkout/V1/HotelRulesAndRestrictions?tripid=8132b31c-00d9-59d2-a079-de7141902c86&rfrr=HOT.CKO.Rules&np=1">Rules & Restrictions</a>and <a style={{color:"#4d4dd8"}} href="https://www.expedia.com/terms?rfrr=HOT.CKO.Terms">Terms of Use</a></p>
                     <p style={{color:"green",display:"flex",marginTop:"7px",alignItems:"center"}}><TbChevronRight/> Change of plans? No problem. You can cancel for free</p>
-                    <button id="complete-btn">Complete Booking {">"}</button>
+                    <button id="complete-btn" onClick={handleClick}>Complete Booking {">"}</button>
                     <div style={{display:"flex",alignItems:"center"}}>
                     <HiLockClosed/>&nbsp;&nbsp;
                     <p>We use secure transmission and encrypted storage to protect your personal information.</p>
@@ -189,12 +200,12 @@ const ButtonPage = () =>{
 
                 <div className="box7">
                     <div style={{}} >
-                    <img style={{padding:"4px",width:"100%",borderRadius:"10px"}} src="https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/00f711b1_l.jpg" alt="" />
+                    <img style={{padding:"4px",width:"100%",borderRadius:"10px"}} src={details?.images[0]?.src} alt={details.title} />
                     </div>
                     <div style={{padding:"20px"}}>
-                        <p><b>DoubleTree by Hilton Goa-Panaji</b></p>
-                        <p><b>4.2/5</b> Very good (53 reviews)</p>
-                        <p>Guests rated this property 4.3/5 for cleanliness</p>
+                        <p><b>{details.title}</b></p>
+                        <p><b>{details.rating}/5</b> Very good ({details.reviews} reviews)</p>
+                        <p>Guests rated this property {details.rating}/5 for cleanliness</p>
                         <p style={{marginTop:"10px",marginBottom:"10px"}}>1 Room: King, Executive Room, Balcony, River View</p>
                         <p><b>Check-in</b>: Fri, Sep 9</p>
                         <p><b>Check-out</b>: Sat, Sep 10</p>
@@ -209,16 +220,16 @@ const ButtonPage = () =>{
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p>1 room x 1 night</p>
-                        <p>$219.07</p>
+                        <p>${+details.price}</p>
                     </div>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p>Taxes and fees !</p>
-                        <p>$39.43</p>
+                        <p>${Math.floor(+details.price*0.28)}</p>
                     </div>
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
                         <p><b>Total</b></p>
-                        <p><b>$258.50</b></p>
+                        <p><b>${+details.price + Math.floor(+(details.price*0.28))}</b></p>
                     </div>
                     <hr style={{borderTop:"1px solid #616161",marginTop:"16px",marginBottom:"16px"}}/>
                     <p><b>Not included in your total</b></p>
@@ -230,4 +241,4 @@ const ButtonPage = () =>{
     </div>
     )
 }
-export {ButtonPage}
+export default ButtonPage;
