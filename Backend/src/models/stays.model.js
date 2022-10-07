@@ -20,10 +20,10 @@ const staysSchema = new mongoose.Schema(
       },
     ],
     amenities: {
-      all:{ type: Boolean, required: false },
-      dinner:{ type: Boolean, required: false },
-      lunch:{ type: Boolean, required: false },
-      breakFast:{ type: Boolean, required: false },
+      all: { type: Boolean, required: false },
+      dinner: { type: Boolean, required: false },
+      lunch: { type: Boolean, required: false },
+      breakFast: { type: Boolean, required: false },
       Pool: { type: Boolean, required: true },
       FreeWiFi: { type: Boolean, required: true },
       Parkingincluded: { type: Boolean, required: true },
@@ -43,7 +43,7 @@ const staysSchema = new mongoose.Schema(
       desc: { type: String, required: true },
       languages: {
         English: { type: Boolean, required: true },
-        German: { type: Boolean, required: false},
+        German: { type: Boolean, required: false },
         Hindi: { type: Boolean, required: true },
       },
     },
@@ -65,7 +65,7 @@ const staysSchema = new mongoose.Schema(
         visa: { type: Boolean, required: true },
       },
     },
-    price:{ type: String, required: true },
+    price: { type: String, required: true },
     rating: { type: String, required: true },
     reviews: { type: String, required: true },
   },
@@ -74,5 +74,5 @@ const staysSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
-
-module.exports = mongoose.model("stays", staysSchema);
+const Stays = mongoose.model("stays", staysSchema);
+module.exports = Stays;

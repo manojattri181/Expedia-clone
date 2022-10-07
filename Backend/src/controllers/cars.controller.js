@@ -1,6 +1,5 @@
 const express = require("express");
-
-const Cars = require("../models/cars.models");
+const Cars = require("../models/cars.model");
 
 const router = express.Router();
 
@@ -18,7 +17,7 @@ router.get("", async (req, res) => {
     let query = [];
 
     // searching
-    if (req.query.q && req.query.q != "") {
+    if (req.query.q) {
       query.push({
         $match: {
           $or: [

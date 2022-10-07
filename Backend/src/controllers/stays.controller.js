@@ -1,6 +1,5 @@
 const express = require("express");
-
-const Stays = require("../models/stays.models");
+const Stays = require("../models/stays.model");
 
 const router = express.Router();
 
@@ -18,7 +17,7 @@ router.get("", async (req, res) => {
     let query = [];
 
     // searching
-    if (req.query.q && req.query.q != "") {
+    if (req.query.q) {
       query.push({
         $match: {
           $or: [
@@ -142,7 +141,6 @@ router.patch("/:id", async (req, res) => {
 router.delete("/:id", async (req, res) => {
   try {
     const stay = await Stays.findByIdAndDelete(req.params.id).lean().exec();
-
     return res.status(200).send(stay);
   } catch (error) {
     return res.status(500).send({ message: error.message });
