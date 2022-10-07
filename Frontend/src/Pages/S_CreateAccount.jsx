@@ -31,11 +31,13 @@ export default function CreateAccount() {
   const createAccountError = useSelector(
     (data) => data.AuthReducer.createAccountError
   );
+
   const successfullyCreated = useSelector(
     (data) => data.AuthReducer.successfullyCreated
   );
   const toast = useToast();
   const errorData = useSelector((data) => data.AuthReducer.errorData);
+  console.log(errorData)
   function SendSignInRequest() {
     dispatch(
       Createaccount({

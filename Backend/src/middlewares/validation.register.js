@@ -3,6 +3,9 @@ const User = require("../models/user.model");
 const validateRegister = () => {
   return [
     body("email")
+      .not()
+      .isEmpty()
+      .withMessage("Email is required")
       .isEmail()
       .custom(async (value) => {
         const user = await User.findOne({ email: value });
