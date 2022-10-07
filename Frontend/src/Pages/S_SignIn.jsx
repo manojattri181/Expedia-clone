@@ -2,13 +2,12 @@ import {
   Box,
   Input,
   Text,
-  FormControl,
   FormLabel,
-  FormHelperText,
   Checkbox,
   Button,
-  Link,
   Image,
+  Link,
+  useToast,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { AiFillApple } from "react-icons/ai"; // FcGoogle
@@ -20,23 +19,34 @@ import { Signigfun } from "../Redux/Auth-reducer/action";
 import { useNavigate } from "react-router-dom";
 
 export default function S_SignIn() {
-  const navigate = useNavigate()
+ 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();
-
+  const navigate = useNavigate()
   const isAuth = useSelector(data => data.AuthReducer.isAuth)
   const isError = useSelector(data => data.AuthReducer.isError)
-
+const toast = useToast()
+const errorData = useSelector((data) => data.AuthReducer.errorData);
   function SendSignInRequest() {
-    if (email !== "" && password !== "") {
+    
       dispatch(Signigfun({ email: email, password: password }));
-    }
+    
   }
 
   useEffect(()=>{
-    if(isAuth){
-      navigate('/')
+    if(isAuth===true){
+      toast({
+        title: `Login Successfull`,
+        status: "success",
+        duration: 900,
+        position: "top",
+        isClosable: true,
+      });
+      // alert("Your Account Sucessfully Created");
+      setTimeout(() => {
+        navigate("/");
+      }, 2000);
     }
   },[isAuth])
   
@@ -57,9 +67,9 @@ export default function S_SignIn() {
       </Box>
       <Box
         margin={"auto"}
-        w={"30%"}
-        h={"600px"}
-        // border={"1px solid black"}
+        w={{ base: '90%', md: '80%', lg: '30%' }}
+     
+        border={"1px solid red"}
         marginTop={"40px"}
       >
         <Box mb={"20px"}>
@@ -77,14 +87,16 @@ export default function S_SignIn() {
             border={`2px solid`}
             type={"email"}
           />
-          { !isError && email === "" ? (
-            <FormLabel color={"red.400"}>Email is required.</FormLabel>
-          ) : (
-            <FormLabel></FormLabel>
-          )}
-          {
-            isError ? <FormLabel color={"red"}>User is not registered</FormLabel>: <FormLabel></FormLabel>
-          }
+          {isError &&
+              errorData
+                .filter((e) => {
+                  return e.param === "email";
+                })
+                .map((e, i) => (
+                  <FormLabel key={i} mt={"5px"} color={"red"}>
+                    {e.msg}
+                  </FormLabel>
+                ))}
         </Box>
         <Box mb={"20px"}>
           <FormLabel>Enter Password</FormLabel>
@@ -96,11 +108,16 @@ export default function S_SignIn() {
             border={`2px solid`}
             type={"password"}
           />
-          {password === "" ? (
-            <FormLabel color={"red.400"}>Password is required.</FormLabel>
-          ) : (
-            <FormLabel></FormLabel>
-          )}
+          {isError &&
+              errorData
+                .filter((e) => {
+                  return e.param === "password";
+                })
+                .map((e, i) => (
+                  <FormLabel key={i} mt={"5px"} color={"red"}>
+                    {e.msg}
+                  </FormLabel>
+                ))}
         </Box>
         <Box mb={"20px"}>
           <Checkbox size={"lg"} defaultChecked>

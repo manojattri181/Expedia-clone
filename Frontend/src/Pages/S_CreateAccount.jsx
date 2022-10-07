@@ -86,9 +86,9 @@ export default function CreateAccount() {
 
       <Box
         margin={"auto"}
-        w={"30%"}
-        h={"600px"}
-        // border={"1px solid black"}
+        w={{ base: '90%', md: '80%', lg: '30%' }}
+        
+        // border={"1px solid red"}
         marginTop={"40px"}
       >
         <Box mb={"20px"}>

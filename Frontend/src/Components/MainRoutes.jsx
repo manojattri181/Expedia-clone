@@ -12,6 +12,7 @@ import SingleStaysPage from '../Pages/SingleStaysPage'
 import Error404 from './Error404'
 import S_Packages from '../Pages/S_Packages'
 import S_Holiday from '../Pages/S_Holiday'
+import SkeletonP from './SingleStaysComponents/Skeleton'
 const MainRoutes = () => {
     return (
         <Routes>
@@ -29,6 +30,7 @@ const MainRoutes = () => {
             <Route path='*' element={<Error404/>} />
             <Route path='/nav_packages' element={<S_Packages/>} />
             <Route path='/nav_holiday' element={<S_Holiday/>} />
+            <Route path="/skeleton" element={<SkeletonP />} />
         </Routes>
     )
 }
