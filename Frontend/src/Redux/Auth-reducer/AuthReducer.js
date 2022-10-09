@@ -15,7 +15,6 @@ const signInData = {
   isLooding: false,
   isError: false,
 
-  
   successfullyCreated: false,
   createAccountLooding: false,
   createAccountError: false,
@@ -37,15 +36,15 @@ export const AuthReducer = (state = signInData, action) => {
         isAuth: true,
         token: payload.token,
         userData: payload.data,
-        isError:false,
+        isError: false,
       };
     case SIGNIN_FAILURE:
       return {
         ...state,
-        isAuth:false,
+        isAuth: false,
         isLooding: false,
         isError: true,
-        errorData:payload,
+        errorData: payload,
       };
     case CREATE_REQUEST:
       return {
@@ -66,7 +65,7 @@ export const AuthReducer = (state = signInData, action) => {
         createAccountLooding: false,
         successfullyCreated: false,
         createAccountError: true,
-        isAuth:false,
+        isAuth: false,
         errorData: payload,
       };
     case SIGNOUT:

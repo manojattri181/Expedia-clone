@@ -1,12 +1,12 @@
 import Navbar from "./Navbar";
 import ButtonPage from "./Buttonpage";
 
-const Totalpage = () =>{
-    return (
+const Totalpage = () => {
+  return (
     <div>
-        <Navbar />
-        <ButtonPage />
+      <Navbar />
+      <ButtonPage />
     </div>
-    )
-}
+  );
+};
 export default Totalpage;

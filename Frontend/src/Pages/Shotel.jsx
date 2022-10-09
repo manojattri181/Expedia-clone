@@ -1,13 +1,12 @@
 import { Box, Text, Grid } from "@chakra-ui/react";
 import React from "react";
-import S_All_Description from "../Components/S_All_Description";
-import S_Barcode_Component from "../Components/S_Barcode_Component";
-import S_Flexible_H_D from "../Components/S_Flexible_H_D";
-import S_Simple_image_box from "../Components/S_Simple_image_box";
-import S_Simple_image_box2 from "../Components/S_Simple_image_box2";
+import S_All_Description from "../Components/SallDescription";
+import S_Barcode_Component from "../Components/SbarcodeComponent";
+import S_Flexible_H_D from "../Components/SflexibleHd";
+import S_Simple_image_box from "../Components/SsimpleImageBox";
+import S_Simple_image_box2 from "../Components/SsimpleImageBox2";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import HomeSearch from "../Components/HomeSearch";
 import HomeSearchBar from "../Components/HomeSearchBar";
 
 export default function S_Hotel() {

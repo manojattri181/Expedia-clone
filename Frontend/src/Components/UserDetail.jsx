@@ -6,10 +6,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   Box,
   Text,
   Button,
@@ -31,7 +27,6 @@ import { useDispatch, useSelector } from "react-redux";
 
 const UserDetail = () => {
   const userData = useSelector((data) => data.AuthReducer.userData);
-  console.log(userData);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { isOpen, onOpen, onClose } = useDisclosure();

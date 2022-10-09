@@ -1,16 +1,9 @@
-import { Box, Button, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import { AiOutlineWifi } from "react-icons/ai";
-import { RiInformationLine } from "react-icons/ri";
-import { MdLocalParking, MdPool } from "react-icons/md";
-import { Link } from "react-router-dom";
-import ImageSlider from "../ImageSlider";
 import SearchBar from "../SearchBar";
 import RoomsCard from "./RoomsCard";
-import ProductCard from "../ProductCard";
 
-const RoomsSection = ({singleProduct}) => {
-
+const RoomsSection = ({ singleProduct }) => {
   let images = [
     {
       src: "https://images.trvl-media.com/hotels/22000000/21170000/21169500/21169474/w365h225x11y0-24f663ed.jpg?impolicy=resizecrop&rw=598&ra=fit",
@@ -42,15 +35,17 @@ const RoomsSection = ({singleProduct}) => {
       <Box margin="0 0rem 1rem 0">
         <SearchBar />
       </Box>
-    
-    
 
-        <Box display={"flex"} gap={"1%"} >
-          {singleProduct?.rooms.map((e)=><RoomsCard images={(singleProduct.images) || (images)} roomes={e} singleProduct={singleProduct} /> )}
-         
-        </Box>
+      <Box display={"flex"} gap={"1%"}>
+        {singleProduct?.rooms.map((e) => (
+          <RoomsCard
+            images={singleProduct.images || images}
+            roomes={e}
+            singleProduct={singleProduct}
+          />
+        ))}
       </Box>
-  
+    </Box>
   );
 };
 

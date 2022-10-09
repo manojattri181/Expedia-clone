@@ -1,15 +1,14 @@
-import { useEffect } from 'react'
+import { useEffect } from "react";
 
-const useDebouce = (callback,delay) => {
-   useEffect(()=>{
-    let debouceid = setTimeout(()=>{
-       callback();
-    },delay)
-    return ()=>{
-        clearTimeout(debouceid);
+const useDebouce = (callback, delay) => {
+  useEffect(() => {
+    let debouceid = setTimeout(() => {
+      callback();
+    }, delay);
+    return () => {
+      clearTimeout(debouceid);
     };
-     },[callback,delay])
-}
-
+  }, [callback, delay]);
+};
 
 export default useDebouce;

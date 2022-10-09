@@ -1,6 +1,5 @@
 import { Box, Link, Text } from "@chakra-ui/react";
 import React from "react";
-// import { Link } from "react-router-dom";
 import StarRatings from "react-star-ratings";
 import {
   MdPool,
@@ -12,38 +11,36 @@ import {
 import { AiOutlineWifi } from "react-icons/ai";
 import { BsSnow } from "react-icons/bs";
 import Map from "../Map";
-const InfoSection = ({singleProduct}) => {
-  
+const InfoSection = ({ singleProduct }) => {
   return (
-    <Box display="flex" boxShadow={"rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"} marginTop={"2rem"}>
+    <Box display="flex" marginTop={"2rem"}>
       <Box
         style={{
-          //   border: "1px solid red",
-          width: "65%",
+          width: "63%",
           height: "30rem",
           padding: "1rem",
           color: "#141d38",
         }}
       >
         <Text fontSize={"28px"} fontWeight={"bold"} color="#141d38">
-          {singleProduct.title || "Pride Hotel"}
+          {singleProduct.title}
         </Text>
         <StarRatings
-          rating={Number(singleProduct.rating || 4.2)}
+          rating={Number(singleProduct.rating)}
           starDimension="15px"
           starSpacing="3px"
           starRatedColor="gray"
         />
         <Text as={"h1"} fontWeight={"bold"} margin={"0.5rem 0"} color="#141d38">
-          {singleProduct?.rating || 4.2} /5 Wonderful
+          {singleProduct?.rating} /5 Wonderful
         </Text>
         <Text as={"small"}>
-          Guests rated this property {singleProduct.rating ||4.2}/5 for cleanliness.
+          Guests rated this property {singleProduct.rating}/5 for cleanliness.
         </Text>
         <Text>
           <Link to="">
             <h3 className="text-sm font-semibold text-blue mt-1 hover:underline">
-              see all {singleProduct.reviews || 482} reviews {">"}
+              see all {singleProduct.reviews} reviews {">"}
             </h3>
           </Link>
         </Text>
@@ -56,7 +53,7 @@ const InfoSection = ({singleProduct}) => {
           Popular amenities
         </Text>
         <Box display={"flex"} color="#141d38">
-          <Box  width="50%" color="#141d38">
+          <Box width="50%" color="#141d38">
             <Text
               fontWeight={"500"}
               display={"flex"}
@@ -69,30 +66,55 @@ const InfoSection = ({singleProduct}) => {
                 Pool
               </Text>
             </Text>
-            <Text fontWeight={"500"} display={"flex"} alignItems="center" margin={"1rem 0"}>
+            <Text
+              fontWeight={"500"}
+              display={"flex"}
+              alignItems="center"
+              margin={"1rem 0"}
+            >
               <AiOutlineWifi />
               <Text marginLeft={"1rem"} color="#141d38">
                 Free Wifi
               </Text>
             </Text>
-            <Text fontWeight={"500"} display={"flex"} alignItems="center" margin={"1rem 0"}>
+            <Text
+              fontWeight={"500"}
+              display={"flex"}
+              alignItems="center"
+              margin={"1rem 0"}
+            >
               <MdLocalParking />
               <Text marginLeft={"1rem"}></Text>
               Parking Included
             </Text>
           </Box>
-          <Box  width="50%">
-            <Text fontWeight={"500"} display={"flex"} alignItems="center" margin={"1rem 0"}>
+          <Box width="50%">
+            <Text
+              fontWeight={"500"}
+              display={"flex"}
+              alignItems="center"
+              margin={"1rem 0"}
+            >
               <BsSnow />
               <Text marginLeft={"1rem"}></Text>
               Air Conditioning
             </Text>
-            <Text fontWeight={"500"} display={"flex"} alignItems="center" margin={"1rem 0"}>
+            <Text
+              fontWeight={"500"}
+              display={"flex"}
+              alignItems="center"
+              margin={"1rem 0"}
+            >
               <MdHotTub />
               <Text marginLeft={"1rem"}></Text>
               Spa
             </Text>
-            <Text fontWeight={"500"} display={"flex"} alignItems="center" margin={"1rem 0"}>
+            <Text
+              fontWeight={"500"}
+              display={"flex"}
+              alignItems="center"
+              margin={"1rem 0"}
+            >
               <MdOutlineRestaurantMenu />
               <Text marginLeft={"1rem"}></Text>
               Restraunt
@@ -107,13 +129,11 @@ const InfoSection = ({singleProduct}) => {
           </Link>
         </Text>
       </Box>
-      <Box width="35%" >
-        <Box  borderRadius="10px">
-          <Map city={singleProduct.map || "5 University Road, Shivaji Nagar, Pune, Maharashtra, 411 005"} width="350px" height="250px" />
+      <Box width="37%" padding={"1rem"}>
+        <Box borderRadius="10px">
+          <Map city={singleProduct.map} width="350px" height="250px" />
         </Box>
-        <Box  fontSize="small">
-          {singleProduct.map ||"5 University Road, Shivaji Nagar, Pune, Maharashtra, 411 005"}
-        </Box>
+        <Box fontSize="small">{singleProduct.map}</Box>
         <Box>
           <Text
             as={"h1"}
@@ -123,22 +143,35 @@ const InfoSection = ({singleProduct}) => {
           >
             Explore Area
           </Text>
-          <Box  width="100%">
-            <Text fontSize={"small"} display={"flex"} padding={"0.5rem 0"}  alignItems="center">
+          <Box width="100%">
+            <Text
+              fontSize={"small"}
+              display={"flex"}
+              padding={"0.5rem 0"}
+              alignItems="center"
+            >
               <MdLocationPin />
               <Text marginLeft={"1rem"}>Oberoi Mall</Text>
             </Text>
-            <Text padding={"0.5rem 0"} fontSize={"small"} display={"flex"} alignItems="center">
+            <Text
+              padding={"0.5rem 0"}
+              fontSize={"small"}
+              display={"flex"}
+              alignItems="center"
+            >
               <MdLocationPin />
-              <Text  fontSize={"small"} marginLeft={"1rem"}>
+              <Text fontSize={"small"} marginLeft={"1rem"}>
                 St. Josephs Convent
               </Text>
             </Text>
-            <Text padding={"0.5rem 0"} fontSize={"small"} display={"flex"} alignItems="center">
+            <Text
+              padding={"0.5rem 0"}
+              fontSize={"small"}
+              display={"flex"}
+              alignItems="center"
+            >
               <MdLocationPin />
-              <Text marginLeft={"1rem"}>
-                Bombay Convention & Exhibition Centre
-              </Text>
+              <Text marginLeft={"1rem"}>Convention & Exhibition Centre</Text>
             </Text>
           </Box>
         </Box>

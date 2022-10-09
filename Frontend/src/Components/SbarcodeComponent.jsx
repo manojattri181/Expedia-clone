@@ -6,17 +6,21 @@ import {
   Image,
   Input,
   Select,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
 import appBanner from "../Assets/HomePage_Images/Top-app-banner.webp";
 import QR from "../Assets/HomePage_Images/QR.webp";
-import SummerBanner from "../Assets/HomePage_Images/Summer-banner.jpg";
 
 export default function S_Barcode_Component() {
   return (
-    <Flex w={{ sm: "95%", md: "80%", lg: "84%" }} m="50px auto" gap="2.5rem"   borderRadius="8px" border="0.2px solid gray">
+    <Flex
+      w={{ sm: "95%", md: "80%", lg: "84%" }}
+      m="50px auto"
+      gap="2.5rem"
+      borderRadius="8px"
+      border="0.2px solid gray"
+    >
       <Box w="35%">
         <Image
           h="100%"

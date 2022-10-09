@@ -1,24 +1,23 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
-export default function S_Flexible_H_D({image}) {
+export default function S_Flexible_H_D({ image }) {
   return (
     <Box>
       <Box
         display={"flex"}
-        // border={"1px solid black"}
         h={"400px"}
-        w={'84%'}
+        w={"84%"}
         margin={"auto"}
-        mb={'50px'}
+        mb={"50px"}
       >
         <Box
           borderRadius={"10px"}
           h={"100%"}
           w={"62%"}
           border={"1px solid black"}
-          boxShadow='xl'
-          cursor={'pointer'}
+          boxShadow="xl"
+          cursor={"pointer"}
         >
           <Image
             h={"70%"}
@@ -41,8 +40,8 @@ export default function S_Flexible_H_D({image}) {
             display={"flex"}
             border={"1px solid black"}
             h={"190px"}
-            boxShadow='xl'
-            cursor={'pointer'}
+            boxShadow="xl"
+            cursor={"pointer"}
           >
             <Box w={"38%"} h={"100%"}>
               <Image
@@ -67,9 +66,9 @@ export default function S_Flexible_H_D({image}) {
             border={"1px solid black"}
             mt={"20px"}
             h={"190px"}
-            display={'flex'}
-            boxShadow='xl'
-            cursor={'pointer'}
+            display={"flex"}
+            boxShadow="xl"
+            cursor={"pointer"}
           >
             <Box w={"38%"} h={"100%"}>
               <Image

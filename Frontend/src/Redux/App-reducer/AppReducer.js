@@ -57,7 +57,7 @@ export const AppReducer = (state = Data, action) => {
     case types.GET_SINGLE_PRODUCT_SUCCESS:
       return {
         ...state,
-        singleProduct:{...payload},
+        singleProduct: { ...payload },
         isLoading: false,
         isError: false,
       };

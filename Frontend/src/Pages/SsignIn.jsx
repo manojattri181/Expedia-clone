@@ -2,13 +2,11 @@ import {
   Box,
   Input,
   Text,
-  FormControl,
   FormLabel,
-  FormHelperText,
   Checkbox,
   Button,
-  Alert,
   Image,
+  Link,
   useToast,
 } from "@chakra-ui/react";
 import React, { useEffect } from "react";
@@ -18,56 +16,37 @@ import { AiFillFacebook } from "react-icons/ai";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Signigfun } from "../Redux/Auth-reducer/action";
-import { Link, useNavigate } from "react-router-dom";
-import { Createaccount } from "../Redux/Auth-reducer/action";
+import { useNavigate } from "react-router-dom";
 
-export default function CreateAccount() {
+export default function S_SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const createAccountError = useSelector(
-    (data) => data.AuthReducer.createAccountError
-  );
-
-  const successfullyCreated = useSelector(
-    (data) => data.AuthReducer.successfullyCreated
-  );
+  const isAuth = useSelector((data) => data.AuthReducer.isAuth);
+  const isError = useSelector((data) => data.AuthReducer.isError);
   const toast = useToast();
   const errorData = useSelector((data) => data.AuthReducer.errorData);
-  console.log(errorData)
   function SendSignInRequest() {
-    dispatch(
-      Createaccount({
-        email: email,
-        password: password,
-        firstName: firstName,
-        lastName: lastName,
-      })
-    );
+    dispatch(Signigfun({ email: email, password: password }));
   }
 
-  // console.log(successfullyCreated)
-
-
   useEffect(() => {
-    if (successfullyCreated) {
+    if (isAuth === true) {
       toast({
-        title: `Account Created Successfull`,
-        status: 'success',
-        duration: 700,
-        position: 'top',
+        title: `Login Successfull`,
+        status: "success",
+        duration: 900,
+        position: "top",
         isClosable: true,
-      })
+      });
       // alert("Your Account Sucessfully Created");
-      setTimeout(()=>{
+      setTimeout(() => {
         navigate("/");
-      },2000)
+      }, 2000);
     }
-  }, [successfullyCreated]);
-  
+  }, [isAuth]);
+
   return (
     <Box>
       <Box
@@ -83,30 +62,27 @@ export default function CreateAccount() {
           src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1"
         />
       </Box>
-
       <Box
         margin={"auto"}
-        w={{ base: '90%', md: '80%', lg: '30%' }}
-        
-        // border={"1px solid red"}
+        w={{ base: "90%", md: "80%", lg: "30%" }}
         marginTop={"40px"}
       >
         <Box mb={"20px"}>
           <Text fontSize={"4xl"} fontWeight={"600"}>
-            Create an account
+            Sign in
           </Text>
         </Box>
-        <Box mb={"20px"}>
+        <Box mb={"30px"}>
           <FormLabel>Enter Email</FormLabel>
           <Input
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email address"
+            placeholder="Email Address"
             w={"100%"}
             h={"55px"}
             border={`2px solid`}
             type={"email"}
           />
-          {createAccountError &&
+          {isError &&
             errorData
               .filter((e) => {
                 return e.param === "email";
@@ -118,41 +94,6 @@ export default function CreateAccount() {
               ))}
         </Box>
         <Box mb={"20px"}>
-          <FormLabel>Enter First name</FormLabel>
-          <Input
-            onChange={(e) => setFirstName(e.target.value)}
-            placeholder="First name"
-            w={"100%"}
-            h={"55px"}
-            border={`2px solid`}
-            type={"text"}
-          />
-          {createAccountError &&
-            errorData
-              .filter((e) => {
-                return e.param === "firstName";
-              })
-              .map((e, i) => (
-                <FormLabel key={i} mt={"5px"} color={"red"}>
-                  {e.msg}
-                </FormLabel>
-              ))}
-        </Box>
-        {/* last name */}
-        <Box mb={"20px"}>
-          <FormLabel>Enter Last name</FormLabel>
-          <Input
-            onChange={(e) => setLastName(e.target.value)}
-            placeholder="Last name"
-            w={"100%"}
-            h={"55px"}
-            border={`2px solid`}
-            type={"text"}
-          />
-          {/* {lastName === '' ? <FormLabel color={'red'}>Last name is required.</FormLabel>:<FormLabel></FormLabel>} */}
-        </Box>
-        {/* password */}
-        <Box mb={"20px"}>
           <FormLabel>Enter Password</FormLabel>
           <Input
             onChange={(e) => setPassword(e.target.value)}
@@ -162,7 +103,7 @@ export default function CreateAccount() {
             border={`2px solid`}
             type={"password"}
           />
-          {createAccountError &&
+          {isError &&
             errorData
               .filter((e) => {
                 return e.param === "password";
@@ -209,19 +150,19 @@ export default function CreateAccount() {
           </Button>
         </Box>
         <Box mt={"15px"} display="flex" justifyContent={"center"}>
-          {/* < style={{}}>Forgot password?</> */}
-          <Link to={""} style={{ color: "blue" }}>
-            Forgot password?
-          </Link>
+          <Link color={"blue"}>Forgot password?</Link>
         </Box>
         <Box mt={"15px"} display="flex" justifyContent={"center"}>
-          <label htmlFor="">Already have an account? </label>
+          <label htmlFor="">Don't have an account? </label>
           <label style={{ color: "white" }} htmlFor="">
             o
           </label>
-          <Link to={"/signin"} style={{ color: "blue" }}>
+          <Link
+            onClick={() => navigate("/create_account")}
+            style={{ color: "blue", cursor: "pointer" }}
+          >
             {" "}
-            Sign In
+            Create one
           </Link>
         </Box>
         <Box mt={"25px"} display="flex" justifyContent={"center"}>
