@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image, Text } from "@chakra-ui/react";
 
-export default function S_Flexible_H_D({ image }) {
+export default function SflexibleHd({ image }) {
   return (
     <Box>
       <Box

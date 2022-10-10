@@ -2,7 +2,7 @@ import { Box, Text, Grid } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function S_ScrollBox_option() {
+export default function SscrollBoxOption() {
   return (
     <Box>
       <Box

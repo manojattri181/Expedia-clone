@@ -12,7 +12,7 @@ import React from "react";
 import appBanner from "../Assets/HomePage_Images/Top-app-banner.webp";
 import QR from "../Assets/HomePage_Images/QR.webp";
 
-export default function S_Barcode_Component() {
+export default function SbarcodeComponent() {
   return (
     <Flex
       w={{ sm: "95%", md: "80%", lg: "84%" }}

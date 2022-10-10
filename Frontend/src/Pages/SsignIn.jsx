@@ -18,7 +18,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Signigfun } from "../Redux/Auth-reducer/action";
 import { useNavigate } from "react-router-dom";
 
-export default function S_SignIn() {
+export default function SsignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const dispatch = useDispatch();

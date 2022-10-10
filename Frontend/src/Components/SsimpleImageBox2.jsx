@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image } from "@chakra-ui/react";
 
-export default function S_Simple_image_box2() {
+export default function SsimpleImageBox2() {
   return (
     <Box>
       <Box

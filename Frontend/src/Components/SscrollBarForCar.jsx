@@ -2,7 +2,7 @@ import { Box, Text, Grid } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function S_Scroll_bar_for_car() {
+export default function SscrollBarForCar() {
   return (
     <Box>
       <Box

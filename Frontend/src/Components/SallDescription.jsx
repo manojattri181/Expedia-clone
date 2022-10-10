@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 
-export default function S_All_Description({ head, body }) {
+export default function SallDescription({ head, body }) {
   return (
     <Box>
       <Text fontWeight={"500"} fontSize={"xl"} mb={"8px"}>
