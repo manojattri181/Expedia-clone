@@ -3,7 +3,7 @@ import React from "react";
 import Footer from "../Components/Footer";
 import HomeSearchBar from "../Components/HomeSearchBar";
 import Navbar from "../Components/Navbar";
-import SbarCode from "../Components/SbarCode";
+import SbarCode from "../Components/SbarcodeComponent";
 import SflexibleHd from "../Components/SflexibleHd";
 import SscrollBoxOption from "../Components/SscrollBoxOption";
 import SsimpleImageBox from "../Components/SsimpleImageBox";
