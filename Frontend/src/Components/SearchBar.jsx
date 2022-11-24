@@ -5,8 +5,8 @@ import { BsCalendarEvent, BsFillPersonFill } from "react-icons/bs";
 import { useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../Redux/App-reducer/action";
-import useDebouce from "./Debouncing";
 import { useRef } from "react";
+import useDebouce from "../utils/Debouncing";
 let city = JSON.parse(localStorage.getItem("city"));
 const SearchBar = () => {
   const [searchparam, setSearchparam] = useSearchParams();

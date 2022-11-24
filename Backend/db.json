@@ -73,13 +73,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -166,13 +166,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -260,13 +260,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -352,13 +352,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -446,13 +446,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -542,13 +542,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -636,13 +636,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -729,13 +729,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -822,13 +822,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -915,13 +915,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -1008,13 +1008,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -1102,13 +1102,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"
@@ -1196,13 +1196,13 @@
         }
       },
       "policies": {
-        "Check-in": {
+        "CheckIn": {
           "from": "Check-in from 3:00 PM - anytime",
           "early": "Early check-in subject to availability",
           "express": "Express check-in",
           "minAge": "Minimum check-in age - 18"
         },
-        "Check-out": {
+        "CheckOut": {
           "before": "Check-out before noon",
           "early": "Late check-out subject to availability",
           "express": "Express check-out"

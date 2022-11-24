@@ -1,4 +1,5 @@
 # links
+
 <h3>oval-wall-8886</h3>
 
 # Project-Expedia-clone
@@ -80,6 +81,14 @@ Expedia is one of the fastest growing online travel portals in Asia, offering tr
 <h4>On this page user has to fill Personal Details like name, mobile no , cards details, etc :- </h4>
 <img src="Frontend/images/Payment.JPG" width="700"/>
 
+<h3> 
+  To start the project use have to clone this repo into to computer and then
+  you have to install all dependencies using npm install inside frontend and backend folder than you are ready to start the project.
+
+  move to backend folder using cd backend and do npm run server to start backend
+  to start frontend move to frontend folder and do npm start.
+
+</h3>
 ## Team Member
 
 - [@Manoj Attri](https://github.com/manojattri181)

@@ -2,11 +2,11 @@ import Map from "./Map";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Link, useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import useDebouce from "./Debouncing";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../Redux/App-reducer/action";
 import { Button, Menu, MenuButton, MenuList } from "@chakra-ui/react";
 import { useRef } from "react";
+import useDebouce from "../utils/Debouncing";
 let divider = {
   width: "240px",
   padding: "0.2px",
@@ -26,6 +26,7 @@ const Filter = () => {
   const dispatch = useDispatch();
   const searchdata = useSelector((items) => items.AppReducer.data);
   const ref = useRef();
+  
   useDebouce(() => {
     setX(query);
   }, 700);

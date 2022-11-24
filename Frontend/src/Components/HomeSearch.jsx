@@ -5,8 +5,8 @@ import { BsCalendarEvent, BsFillPersonFill } from "react-icons/bs";
 import { Link, useSearchParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../Redux/App-reducer/action";
-import useDebouce from "./Debouncing";
 import { useRef } from "react";
+import useDebouce from "../utils/Debouncing";
 
 const HomeSearch = () => {
   const [searchparam, setSearchparam] = useSearchParams();

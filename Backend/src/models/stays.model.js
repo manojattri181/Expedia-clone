@@ -48,13 +48,13 @@ const staysSchema = new mongoose.Schema(
       },
     },
     policies: {
-      Checkin: {
+      CheckIn: {
         from: { type: String, required: true },
         early: { type: String, required: true },
         express: { type: String, required: true },
         minAge: { type: String, required: true },
       },
-      Checkout: {
+      CheckOut: {
         before: { type: String, required: true },
         early: { type: String, required: true },
         express: { type: String, required: true },

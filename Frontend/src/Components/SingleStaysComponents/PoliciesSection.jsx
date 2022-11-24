@@ -16,16 +16,16 @@ const PoliciesSection = ({ singleProduct }) => {
               Check In
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkin.early}
+              {singleProduct.policies.CheckIn.early}
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkin.express}
+              {singleProduct.policies.CheckIn.express}
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkin.from}
+              {singleProduct.policies.CheckIn.from}
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkin.minAge}
+              {singleProduct.policies.CheckIn.minAge}
             </Text>
           </Box>
           <Box>
@@ -33,13 +33,13 @@ const PoliciesSection = ({ singleProduct }) => {
               Check Out
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkout.before}
+              {singleProduct.policies.CheckOut.before}
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkout.early}
+              {singleProduct.policies.CheckOut.early}
             </Text>
             <Text fontSize={"14px"} marginBottom="0.5rem">
-              {singleProduct.policies.Checkout.express}
+              {singleProduct.policies.CheckOut.express}
             </Text>
           </Box>
         </Box>
