@@ -44,8 +44,8 @@ router.post(
         return res.status(400).send({ errors: errors.array() });
       }
       const user = await User.findOne({ email: req.body.email });
-      if (user) {
-        //check Password
+      if (user){
+        // check Password
         const match = user.checkPassword(req.body.password);
         if (match) {
           let token = newtoken(user);

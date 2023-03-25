@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dbserver": "json-server --watch db.json --port 8080",
     "server": "nodemon src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.9",
     "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.22",
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
     "server": "^1.0.37",

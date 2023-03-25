@@ -13,6 +13,7 @@ router.post("", async (req, res) => {
 });
 
 router.get("", async (req, res) => {
+
   try {
     let query = [];
 
@@ -69,7 +70,7 @@ router.get("", async (req, res) => {
       });
     }
     // pagination
-
+      
     let total = await Stays.countDocuments(query);
     let page = req.query.page ? parseInt(req.query.page) : 1;
     let perPage = req.query.perPage ? parseInt(req.query.perPage) : 10;

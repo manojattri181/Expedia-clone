@@ -13,12 +13,16 @@ app.use(express.json());
 
 app.get("/", (req, res) => {
   res.send({
-    message: "Home Page",
+    message: "Home Page Expedia",
   });
 });
+
 app.use("/auth", authController);
 app.use("/profile",authenticate, currentProfileController);
 app.use("/stays", staysController);
 app.use("/cars", carsController);
 
 module.exports = app;
+
+
+
