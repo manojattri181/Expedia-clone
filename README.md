@@ -1,7 +1,5 @@
 # links
 
-<h3>oval-wall-8886</h3>
-
 # Project-Expedia-clone
 
 Expedia is one of the fastest growing online travel portals in Asia, offering travellers an extensive selection of hotels, activities and travel services to meet every budget and activities of every kind at competitive rates. With over hundreds of thousands of hotel partners worldwide and a comprehensive offering of flight inventory made available on the website, travellers can book everything they need for a holiday - rooms to meet every budget, activities of every kind and travel services to complement.
@@ -10,7 +8,7 @@ Expedia is one of the fastest growing online travel portals in Asia, offering tr
 
 \*We as a team given a task to Clone the Expedia.co.in Website.\*\*
 
-# To visit our website [Click here](https://expedia-tawny.vercel.app/)
+# To visit our website [Click here](https://travelpedia-five.vercel.app/)
 
 ## NPM Packages used
 
